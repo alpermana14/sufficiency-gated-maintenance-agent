@@ -46,17 +46,15 @@ Python 3.12 and Node.js 20 or later.
 # backend
 cd backend
 pip install -r requirements.txt
-cp .env.example .env          # then fill in your own values
 uvicorn main:app --port 8000
 
 # frontend
 cd frontend
 npm install
-cp .env.example .env
 npm run dev
 ```
 
-The agent and the gate call the OpenAI API, so `OPENAI_API_KEY` is required for them. The live service reads
+The backend reads its settings from `backend/.env`. The agent and the gate call the OpenAI API, so `OPENAI_API_KEY` is required for them. The live service reads
 the sensor records from a MySQL database. The experiments read `data/conveyor_export.csv` instead
 (or the file named by `PM_DATA_CSV`), so they run without a database.
 
