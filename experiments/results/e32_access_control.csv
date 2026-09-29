@@ -1,0 +1,19 @@
+case,group,description,expected,observed,pass
+A1,access control,approve while no approver is configured,"refused (503), nothing stored","HTTP 503, stored 0",yes
+A2,access control,approve without a token,"refused (401), attempt logged, nothing stored","HTTP 401, stored 0, denied events +1",yes
+A3,access control,approve with a token that differs in one character,"refused (401), attempt logged, nothing stored","HTTP 401, stored 0, denied events +1",yes
+A4,access control,approve with the chat session identifier used as the token,"refused (401), nothing stored","HTTP 401, stored 0",yes
+A5,access control,approve a session that has no draft,"refused (400), nothing stored","HTTP 400, stored 0",yes
+A6,access control,approve an unedited draft with a valid token,"stored once with approver name, unedited flag and equal hashes; draft cleared; episode reviewed","HTTP 200, stored 1, approved_by=Operator A, modified=False, episode reviewed by Operator A",yes
+A7,access control,approve an edited draft with a second operator's token,"the edited text is stored, attributed to that operator, flagged as edited, hashes differ","HTTP 200, stored 2, approved_by=Operator B, modified=True",yes
+A8,access control,reject without a reason,"refused (400), draft kept, nothing stored","HTTP 400, draft kept True, stored 2",yes
+A9,access control,reject without a token,"refused (401), draft kept","HTTP 401, draft kept True",yes
+A10,access control,reject with a valid token and a reason,"accepted, draft cleared, nothing stored, rejection logged","HTTP 200, stored 2, rejection logged True",yes
+A11,access control,mark a shift episode reviewed with a wrong token,"refused (401), episode stays open","HTTP 401, episode reviewed=False",yes
+B1,audit log,verify the log written by cases A1 to A11 (9 records),chain intact,"intact=True, records=9",yes
+B2,audit log,edit one field of a record in the middle of the log,break detected,"intact=False, break found after record 4",yes
+B3,audit log,delete one record in the middle of the log,break detected,"intact=False, break found after record 4",yes
+B4,audit log,swap two adjacent records,break detected,"intact=False, break found after record 4",yes
+B5,audit log,delete the last record,not detectable by the chain alone (no later record holds its hash),intact=True,yes
+C1,isolation,the real audit log is untouched,same size before and after,2441 -> 2441 bytes,yes
+C2,isolation,the real store of approved work orders is untouched,same record count,0 -> 0 records,yes

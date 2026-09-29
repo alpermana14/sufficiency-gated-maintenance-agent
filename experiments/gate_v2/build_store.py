@@ -1,0 +1,170 @@
+"""Gate v2 - the store of approved work orders the gate is evaluated against.
+
+Design decisions, fixed before any query was written:
+  * 20 records, written as operator-approved work orders for a light-load conveyor.
+  * Coverage is deliberate: some fault families are PRESENT so that queries about them
+    are answerable, and others are deliberately ABSENT so that a correct gate must
+    report a gap. The absent families are listed in ABSENT_FAMILIES and no record
+    mentions them.
+  * Two records contradict each other on the fix for the same symptom (WO-03 and
+    WO-14, belt mistracking). Both are kept, because a store that grows by operator
+    approval accumulates superseded advice.
+  * Some records name a topic without the detail an operator may ask for (for example
+    WO-05 lubricates rollers without naming the lubricant). These support the
+    partially-relevant query category.
+
+LABELLING POLICY (author decision, 16 Sep 2026):
+  * sufficient   - a record contains information that materially answers the query;
+  * insufficient - the store only touches the topic without answering it
+                   (partially relevant), or does not cover it at all;
+  * contradictory records count as SUFFICIENT: the evidence exists, and resolving
+    the conflict is a separate mechanism, not the job of this gate.
+"""
+import json
+import os
+
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "store.json")
+
+ABSENT_FAMILIES = [
+    "bearing spalling or outer-race defect",
+    "motor winding insulation failure",
+    "gearbox oil contamination analysis",
+    "belt splice failure",
+    "drive pulley lagging wear",
+    "temperature sensor calibration drift",
+    "gearbox replacement",
+    "structural frame crack",
+]
+
+# (id, date, topic family, text). "topic" is bookkeeping for query labelling, not given to the retriever.
+RECORDS = [
+    ("WO-01", "2026-01-22", "roller lubrication",
+     "Incident Report. Timestamp: 2026-01-22 14:05. Root Cause Analysis: scheduled preventive "
+     "maintenance, no fault present. Recommended Actions: 1) lubricate the drive-end and idler "
+     "rollers; 2) check coupling alignment; 3) clean accumulated debris from the frame. "
+     "Priority: Low. Approved by the shift supervisor."),
+    ("WO-02", "2026-02-09", "debris on frame",
+     "Incident Report. Timestamp: 2026-02-09 07:40. Symptom: intermittent rubbing noise near the "
+     "tail section. Root Cause Analysis: packaging material had accumulated under the return "
+     "rollers and contacted the belt edge. Recommended Actions: 1) stop the conveyor and remove "
+     "the accumulated material; 2) inspect the belt edge for damage; 3) add a fortnightly "
+     "cleaning check to the routine. Priority: Low."),
+    ("WO-03", "2026-03-11", "belt mistracking",
+     "Incident Report. Timestamp: 2026-03-11 09:20. Symptom: the belt drifts to the drive side "
+     "and x_rms rises during the drift. Root Cause Analysis: belt mistracking causing "
+     "intermittent edge contact. Recommended Actions: 1) adjust the tail pulley tracking bolts a "
+     "quarter turn at a time; 2) re-tension the belt to specification; 3) inspect the belt edges "
+     "for fraying. Priority: Medium."),
+    ("WO-04", "2026-03-28", "drive chain slack",
+     "Incident Report. Timestamp: 2026-03-28 16:10. Symptom: jerky running of the conveyor at "
+     "start-up. Root Cause Analysis: the drive chain had stretched beyond the adjustment range "
+     "and skipped a tooth under load. Recommended Actions: 1) re-tension the drive chain; "
+     "2) replace the chain if the stretch exceeds two per cent; 3) re-check after one week of "
+     "operation. Priority: Medium."),
+    ("WO-05", "2026-04-04", "roller lubrication",
+     "Incident Report. Timestamp: 2026-04-04 10:15. Symptom: rising acoustic noise from the "
+     "idler section. Root Cause Analysis: dry idler roller bushes after an extended run. "
+     "Recommended Actions: 1) lubricate the idler rollers; 2) recheck noise after one shift. "
+     "Priority: Low."),
+    ("WO-06", "2026-04-18", "belt tension",
+     "Incident Report. Timestamp: 2026-04-18 11:30. Symptom: belt slip under load, the drive "
+     "pulley turns while the belt lags. Root Cause Analysis: belt tension had fallen below "
+     "specification after thermal cycling. Recommended Actions: 1) re-tension the belt to the "
+     "value in the maintenance manual; 2) verify the take-up travel remaining; 3) monitor motor "
+     "current for the next two shifts. Priority: Medium."),
+    ("WO-07", "2026-05-05", "load change",
+     "Incident Report. Timestamp: 2026-05-05 15:00. Vibration: 3.54 mm/s. ISO Zone C "
+     "(Unsatisfactory). Distribution-shift status: episode open. Root Cause Analysis: "
+     "distributional shift in z_rms, motor current and acoustic noise consistent with a large "
+     "increase in conveyor load of about 40 kg. Recommended Actions: 1) verify load distribution "
+     "on the belt; 2) confirm the load is within rated capacity; 3) monitor z_rms for a return "
+     "to baseline after the load is removed; 4) no mechanical intervention required. "
+     "Priority: Low."),
+    ("WO-08", "2026-05-19", "emergency stop",
+     "Incident Report. Timestamp: 2026-05-19 08:05. Symptom: the emergency stop button at the "
+     "head end did not latch when pressed during the weekly function test. Root Cause Analysis: "
+     "the latching mechanism of the button was worn. Recommended Actions: 1) replace the "
+     "emergency stop button assembly; 2) repeat the function test; 3) record the test in the "
+     "safety log. Priority: High."),
+    ("WO-09", "2026-05-30", "inverter trip",
+     "Incident Report. Timestamp: 2026-05-30 13:45. Symptom: the frequency inverter tripped on "
+     "overcurrent twice within one shift. Root Cause Analysis: the acceleration ramp was too "
+     "short for the loaded belt. Recommended Actions: 1) extend the acceleration ramp from two "
+     "to five seconds; 2) confirm no mechanical blockage; 3) log the trip counter weekly. "
+     "Priority: Medium."),
+    ("WO-10", "2026-06-11", "sensor cable",
+     "Incident Report. Timestamp: 2026-06-11 09:55. Symptom: the vibration channel reported zero "
+     "for several hours. Root Cause Analysis: the accelerometer cable connector had loosened "
+     "through vibration. Recommended Actions: 1) reseat and secure the connector; 2) add a cable "
+     "tie at the bracket; 3) verify the reading against a handheld meter. Priority: Medium."),
+    ("WO-11", "2026-06-24", "coupling alignment",
+     "Incident Report. Timestamp: 2026-06-24 15:20. Symptom: a periodic knocking sound at the "
+     "drive end. Root Cause Analysis: angular misalignment of the motor coupling after the motor "
+     "mount bolts had loosened. Recommended Actions: 1) retighten the motor mount bolts to "
+     "specification; 2) realign the coupling with a dial gauge; 3) recheck after one week. "
+     "Priority: Medium."),
+    ("WO-12", "2026-07-02", "gearbox oil level",
+     "Incident Report. Timestamp: 2026-07-02 10:40. Symptom: the gearbox oil sight glass read "
+     "below the minimum mark. Root Cause Analysis: gradual loss through the output shaft seal. "
+     "Recommended Actions: 1) top up the gearbox oil to the mark; 2) wipe and observe the seal "
+     "for one week; 3) schedule a seal replacement if loss continues. Priority: Low."),
+    ("WO-13", "2026-07-15", "idler roller noise",
+     "Incident Report. Timestamp: 2026-07-15 07:25. Symptom: a rhythmic squeal from the middle "
+     "idler set. Root Cause Analysis: an idler roller had seized on its shaft after ingress of "
+     "fine dust. Recommended Actions: 1) replace the seized idler roller; 2) clean the "
+     "neighbouring rollers; 3) check the dust shield. Priority: Medium."),
+    ("WO-14", "2026-08-02", "belt mistracking",
+     "Incident Report. Timestamp: 2026-08-02 14:50. Symptom: the belt drifts to the drive side "
+     "again, the same symptom as in March. Root Cause Analysis: the previous adjustment of the "
+     "tracking bolts did not hold; the crowned pulley had worn flat on one side. Recommended "
+     "Actions: 1) do not readjust the tracking bolts, the adjustment does not hold; 2) replace "
+     "the crowned tail pulley; 3) re-tension the belt afterwards. Priority: Medium."),
+    ("WO-15", "2026-08-20", "roller lubrication",
+     "Incident Report. Timestamp: 2026-08-20 09:10. Symptom: routine lubrication round. Root "
+     "Cause Analysis: no fault, scheduled work. Recommended Actions: 1) apply NLGI grade 2 "
+     "lithium complex grease to the idler and drive-end roller bearings, two strokes per "
+     "nipple; 2) wipe excess grease; 3) record the date on the lubrication card. Priority: Low."),
+    ("WO-16", "2026-09-01", "belt cleaning",
+     "Incident Report. Timestamp: 2026-09-01 06:50. Symptom: product carry-back on the return "
+     "side. Root Cause Analysis: the belt scraper blade had worn past its wear line. Recommended "
+     "Actions: 1) replace the scraper blade; 2) set the blade pressure to the manual value; "
+     "3) inspect the return rollers for build-up. Priority: Low."),
+    ("WO-17", "2026-09-08", "motor mounting",
+     "Incident Report. Timestamp: 2026-09-08 11:05. Symptom: a rise in z_rms without a load "
+     "change. Root Cause Analysis: two motor mount bolts were found finger-tight. Recommended "
+     "Actions: 1) torque all four motor mount bolts to specification; 2) recheck z_rms over the "
+     "next two shifts; 3) add the bolts to the monthly check. Priority: Medium."),
+    ("WO-18", "2026-09-14", "guard interlock",
+     "Incident Report. Timestamp: 2026-09-14 16:30. Symptom: the side guard interlock switch "
+     "intermittently reported the guard as open. Root Cause Analysis: the actuator had shifted "
+     "in its slot. Recommended Actions: 1) realign and lock the actuator; 2) test the interlock "
+     "ten times; 3) record the test in the safety log. Priority: High."),
+    ("WO-19", "2026-09-19", "acoustic noise",
+     "Incident Report. Timestamp: 2026-09-19 10:20. Symptom: acoustic noise rose by about four "
+     "decibels over two days with vibration unchanged. Root Cause Analysis: a loose inspection "
+     "cover resonating at running speed. Recommended Actions: 1) refit and secure the inspection "
+     "cover; 2) confirm the noise level returns to baseline; 3) no further action if it does. "
+     "Priority: Low."),
+    ("WO-20", "2026-09-25", "start-up procedure",
+     "Incident Report. Timestamp: 2026-09-25 07:00. Symptom: the operator reported an unusually "
+     "slow start after the weekend shutdown. Root Cause Analysis: cold grease viscosity after "
+     "the machine stood for two days; no fault found. Recommended Actions: 1) run the conveyor "
+     "unloaded for five minutes before loading it after any shutdown longer than one day; "
+     "2) no mechanical intervention required. Priority: Low."),
+]
+
+
+def main():
+    records = [{"id": i, "date": d, "topic": t, "text": x} for i, d, t, x in RECORDS]
+    assert len({r["id"] for r in records}) == len(records)
+    payload = {"records": records, "absent_families": ABSENT_FAMILIES,
+               "contradictory_pair": ["WO-03", "WO-14"]}
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False)
+    print(f"wrote {len(records)} records to {OUT}")
+    for r in records:
+        print(f"  {r['id']}  {r['date']}  {r['topic']}")
+
+
+if __name__ == "__main__":
+    main()

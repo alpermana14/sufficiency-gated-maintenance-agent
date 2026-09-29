@@ -1,0 +1,4 @@
+group,items,task_success_mean,ci_low,ci_high
+everyday work,60,1.592,1.4,1.767
+plausible answer is wrong,60,1.267,1.067,1.467
+all categories,120,1.429,1.292,1.567

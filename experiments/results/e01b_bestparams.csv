@@ -1,0 +1,4 @@
+LightGBM-CD,{'num_leaves': 59, 'learning_rate': 0.27051668818999286, 'n_estimators': 565, 'min_child_samples': 95, 'subsample': 0.9579309401710595, 'colsample_bytree': 0.8391599915244341, 'reg_lambda': 4.869640941520899}
+LightGBM,{'num_leaves': 209, 'learning_rate': 0.028180680291847244, 'n_estimators': 158, 'min_child_samples': 70, 'subsample': 0.7760609974958406, 'colsample_bytree': 0.6488152939379115, 'reg_lambda': 0.09565499215943825}
+XGBoost,{'max_depth': 6, 'learning_rate': 0.018227726925281677, 'n_estimators': 266, 'subsample': 0.9512986748659008, 'colsample_bytree': 0.7983631287693599, 'min_child_weight': 5, 'reg_lambda': 0.008354749981873796}
+RandomForest,{'n_estimators': 191, 'max_depth': 25, 'min_samples_leaf': 2, 'max_features': 0.6599641068895281}

@@ -1,0 +1,5 @@
+lgb_config,stage,seconds
+deployed,feature_engineering,0.586
+deployed,train_6_models,6.873
+deployed,forecast_inference (median),0.316
+deployed,anomaly_inference (median),0.091

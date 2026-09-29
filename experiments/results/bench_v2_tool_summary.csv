@@ -1,0 +1,13 @@
+category,runs,tool_selection_correct,latency_s
+Missing parameters and unavailable information,14,0.786,6.167
+Tool failures and malformed outputs,14,0.929,5.342
+Adversarial instructions,14,1.0,3.806
+Ambiguous requests,14,0.857,2.581
+General engineering,14,1.0,5.529
+Historical sensor data,14,1.0,2.469
+Live machine state,14,1.0,2.056
+Maintenance manual,14,1.0,3.922
+Multi-step tool use,14,1.0,7.336
+Past work orders,14,0.857,4.816
+Work-order drafting and editing,14,0.857,8.621
+Conflicting documents,14,0.643,5.535

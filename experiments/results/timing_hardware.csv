@@ -1,0 +1,7 @@
+,0
+cpu,"Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+logical_cores,12
+physical_cores,10
+ram_GB,16.8
+fast_model_repeats,3
+dl_epochs,25

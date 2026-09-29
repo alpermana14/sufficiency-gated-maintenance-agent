@@ -1,0 +1,15 @@
+zone,shift,forecast_worsens,alert_level,work_order_scope,expected_priority,runs,work_order_tool,manual,past_orders,alert_level_match,priority_match,scope_followed,causes_or_inspection,timing,definite_fault,immediate_stop,latency_s
+A,False,False,Normal,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,5.256666666666667
+A,False,True,Low,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,6.55
+A,True,False,Low,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,5.426666666666667
+A,True,True,Medium,monitoring,Medium,3,3,0,0,3,3,3,0,not stated 3,0,0,6.16
+B,False,False,Normal,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,7.803333333333334
+B,False,True,Low,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,6.68
+B,True,False,Low,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,6.736666666666667
+B,True,True,Medium,monitoring,Medium,3,3,0,0,3,3,3,0,not stated 3,0,0,5.8933333333333335
+C,False,False,Normal,monitoring,Low,3,3,0,0,3,3,3,0,not stated 3,0,0,7.793333333333333
+C,False,True,Low,scheduled_inspection,Low,3,3,3,3,3,3,3,3,next scheduled maintenance 3,0,0,11.776666666666666
+C,True,False,Low,scheduled_inspection,Low,3,3,3,3,3,3,3,3,next scheduled maintenance 3,0,0,13.316666666666668
+C,True,True,Medium,scheduled_inspection,Medium,3,3,3,3,3,3,3,3,next scheduled maintenance 3,0,0,15.183333333333332
+D,False,False,High,prompt_inspection,High,3,3,3,3,3,3,3,3,as soon as practical 3,0,0,10.706666666666669
+D,True,False,High,prompt_inspection,High,3,3,3,3,3,3,3,3,as soon as practical 3,0,0,12.209999999999999

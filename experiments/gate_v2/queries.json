@@ -1,0 +1,2042 @@
+{
+ "dev_fraction": 0.4,
+ "split_seed": 20260916,
+ "queries": [
+  {
+   "id": "IC-001",
+   "category": "in_coverage",
+   "query": "Have we had belt mistracking on this conveyor before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": "P01",
+   "split": "dev"
+  },
+  {
+   "id": "PP-001",
+   "category": "paraphrase",
+   "query": "belt keeps wandering to one side, has that happened before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": "P01",
+   "split": "dev"
+  },
+  {
+   "id": "IC-002",
+   "category": "in_coverage",
+   "query": "What was done the last time the belt slipped under load?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06"
+   ],
+   "pair_id": "P02",
+   "split": "test"
+  },
+  {
+   "id": "PP-002",
+   "category": "paraphrase",
+   "query": "belt slipped when it was loaded, what did we do last time?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06"
+   ],
+   "pair_id": "P02",
+   "split": "test"
+  },
+  {
+   "id": "IC-003",
+   "category": "in_coverage",
+   "query": "Is there a past record of jerky running at start-up?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-04"
+   ],
+   "pair_id": "P03",
+   "split": "test"
+  },
+  {
+   "id": "PP-003",
+   "category": "paraphrase",
+   "query": "conveyor judders on start up, any history?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-04"
+   ],
+   "pair_id": "P03",
+   "split": "test"
+  },
+  {
+   "id": "IC-004",
+   "category": "in_coverage",
+   "query": "Have we replaced an emergency stop button before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08"
+   ],
+   "pair_id": "P04",
+   "split": "dev"
+  },
+  {
+   "id": "PP-004",
+   "category": "paraphrase",
+   "query": "have we ever swapped out an e-stop button?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08"
+   ],
+   "pair_id": "P04",
+   "split": "dev"
+  },
+  {
+   "id": "IC-005",
+   "category": "in_coverage",
+   "query": "What caused the frequency inverter to trip on overcurrent?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-09"
+   ],
+   "pair_id": "P05",
+   "split": "test"
+  },
+  {
+   "id": "PP-005",
+   "category": "paraphrase",
+   "query": "why did the inverter keep tripping on overcurrent?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-09"
+   ],
+   "pair_id": "P05",
+   "split": "test"
+  },
+  {
+   "id": "IC-006",
+   "category": "in_coverage",
+   "query": "Has the accelerometer cable ever caused a missing vibration reading?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-10"
+   ],
+   "pair_id": "P06",
+   "split": "test"
+  },
+  {
+   "id": "PP-006",
+   "category": "paraphrase",
+   "query": "vibration reading went flat once, was that the sensor cable?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-10"
+   ],
+   "pair_id": "P06",
+   "split": "test"
+  },
+  {
+   "id": "IC-007",
+   "category": "in_coverage",
+   "query": "What did we do about coupling misalignment at the drive end?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-11"
+   ],
+   "pair_id": "P07",
+   "split": "test"
+  },
+  {
+   "id": "PP-007",
+   "category": "paraphrase",
+   "query": "drive end coupling was out of line, what did we do?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-11"
+   ],
+   "pair_id": "P07",
+   "split": "test"
+  },
+  {
+   "id": "IC-008",
+   "category": "in_coverage",
+   "query": "Have we topped up the gearbox oil before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-12"
+   ],
+   "pair_id": "P08",
+   "split": "test"
+  },
+  {
+   "id": "PP-008",
+   "category": "paraphrase",
+   "query": "have we ever had to put oil in the gearbox?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-12"
+   ],
+   "pair_id": "P08",
+   "split": "test"
+  },
+  {
+   "id": "IC-009",
+   "category": "in_coverage",
+   "query": "Was an idler roller ever replaced because it seized?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P09",
+   "split": "test"
+  },
+  {
+   "id": "PP-009",
+   "category": "paraphrase",
+   "query": "did we ever change an idler that had seized up?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P09",
+   "split": "test"
+  },
+  {
+   "id": "IC-010",
+   "category": "in_coverage",
+   "query": "Which grease is used on the roller bearings?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-15"
+   ],
+   "pair_id": "P10",
+   "split": "dev"
+  },
+  {
+   "id": "PP-010",
+   "category": "paraphrase",
+   "query": "what grease goes on the roller bearings?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-15"
+   ],
+   "pair_id": "P10",
+   "split": "dev"
+  },
+  {
+   "id": "IC-011",
+   "category": "in_coverage",
+   "query": "Has product carry-back on the return side been dealt with?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-16"
+   ],
+   "pair_id": "P11",
+   "split": "test"
+  },
+  {
+   "id": "PP-011",
+   "category": "paraphrase",
+   "query": "stuff sticking on the return belt, did we sort that out?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-16"
+   ],
+   "pair_id": "P11",
+   "split": "test"
+  },
+  {
+   "id": "IC-012",
+   "category": "in_coverage",
+   "query": "Were loose motor mount bolts ever found on this machine?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-17"
+   ],
+   "pair_id": "P12",
+   "split": "dev"
+  },
+  {
+   "id": "PP-012",
+   "category": "paraphrase",
+   "query": "any history of loose motor mounting bolts?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-17"
+   ],
+   "pair_id": "P12",
+   "split": "dev"
+  },
+  {
+   "id": "IC-013",
+   "category": "in_coverage",
+   "query": "Has the guard interlock switch given a false open signal before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-18"
+   ],
+   "pair_id": "P13",
+   "split": "test"
+  },
+  {
+   "id": "PP-013",
+   "category": "paraphrase",
+   "query": "guard switch said open when it wasnt, seen that before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-18"
+   ],
+   "pair_id": "P13",
+   "split": "test"
+  },
+  {
+   "id": "IC-014",
+   "category": "in_coverage",
+   "query": "What explained the rise in acoustic noise without a vibration change?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-19"
+   ],
+   "pair_id": "P14",
+   "split": "test"
+  },
+  {
+   "id": "PP-014",
+   "category": "paraphrase",
+   "query": "got noisier but vibration stayed flat, what was that?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-19"
+   ],
+   "pair_id": "P14",
+   "split": "test"
+  },
+  {
+   "id": "IC-015",
+   "category": "in_coverage",
+   "query": "Is there a record about a slow start after a weekend shutdown?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-20"
+   ],
+   "pair_id": "P15",
+   "split": "test"
+  },
+  {
+   "id": "PP-015",
+   "category": "paraphrase",
+   "query": "slow to start after the weekend, is that written up anywhere?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-20"
+   ],
+   "pair_id": "P15",
+   "split": "test"
+  },
+  {
+   "id": "IC-016",
+   "category": "in_coverage",
+   "query": "Have we had a distribution-shift episode caused by extra load?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07"
+   ],
+   "pair_id": "P16",
+   "split": "test"
+  },
+  {
+   "id": "PP-016",
+   "category": "paraphrase",
+   "query": "ever had an alarm that turned out to be just extra load?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07"
+   ],
+   "pair_id": "P16",
+   "split": "test"
+  },
+  {
+   "id": "IC-017",
+   "category": "in_coverage",
+   "query": "What was recommended when the vibration reached ISO zone C?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07"
+   ],
+   "pair_id": "P17",
+   "split": "test"
+  },
+  {
+   "id": "PP-017",
+   "category": "paraphrase",
+   "query": "when we hit zone C what did they tell us to do?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07"
+   ],
+   "pair_id": "P17",
+   "split": "test"
+  },
+  {
+   "id": "IC-018",
+   "category": "in_coverage",
+   "query": "Has debris under the return rollers caused a noise complaint?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-02"
+   ],
+   "pair_id": "P18",
+   "split": "test"
+  },
+  {
+   "id": "PP-018",
+   "category": "paraphrase",
+   "query": "rubbish under the return rollers making noise, any record?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-02"
+   ],
+   "pair_id": "P18",
+   "split": "test"
+  },
+  {
+   "id": "IC-019",
+   "category": "in_coverage",
+   "query": "Was the drive chain ever re-tensioned?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-04"
+   ],
+   "pair_id": "P19",
+   "split": "dev"
+  },
+  {
+   "id": "PP-019",
+   "category": "paraphrase",
+   "query": "have we ever tightened the drive chain?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-04"
+   ],
+   "pair_id": "P19",
+   "split": "dev"
+  },
+  {
+   "id": "IC-020",
+   "category": "in_coverage",
+   "query": "Have the idler rollers been lubricated because they ran dry?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-05"
+   ],
+   "pair_id": "P20",
+   "split": "dev"
+  },
+  {
+   "id": "PP-020",
+   "category": "paraphrase",
+   "query": "idlers went dry once and got greased, right?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-05"
+   ],
+   "pair_id": "P20",
+   "split": "dev"
+  },
+  {
+   "id": "IC-021",
+   "category": "in_coverage",
+   "query": "What preventive maintenance has been recorded for this conveyor?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-01",
+    "WO-15",
+    "WO-20"
+   ],
+   "pair_id": "P21",
+   "split": "test"
+  },
+  {
+   "id": "PP-021",
+   "category": "paraphrase",
+   "query": "whats the routine maintenance we have on record?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-01",
+    "WO-15",
+    "WO-20"
+   ],
+   "pair_id": "P21",
+   "split": "test"
+  },
+  {
+   "id": "IC-022",
+   "category": "in_coverage",
+   "query": "Which past work orders mention the tail pulley?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": "P22",
+   "split": "dev"
+  },
+  {
+   "id": "PP-022",
+   "category": "paraphrase",
+   "query": "which jobs mention the tail pulley?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": "P22",
+   "split": "dev"
+  },
+  {
+   "id": "IC-023",
+   "category": "in_coverage",
+   "query": "Has a scraper blade been replaced on this machine?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-16"
+   ],
+   "pair_id": "P23",
+   "split": "dev"
+  },
+  {
+   "id": "PP-023",
+   "category": "paraphrase",
+   "query": "did we ever put a new scraper blade on?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-16"
+   ],
+   "pair_id": "P23",
+   "split": "dev"
+  },
+  {
+   "id": "IC-024",
+   "category": "in_coverage",
+   "query": "What did we do when the belt edge risked fraying?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": "P24",
+   "split": "test"
+  },
+  {
+   "id": "PP-024",
+   "category": "paraphrase",
+   "query": "belt edge was about to fray, what did we do?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": "P24",
+   "split": "test"
+  },
+  {
+   "id": "IC-025",
+   "category": "in_coverage",
+   "query": "Have we ever extended the inverter acceleration ramp?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-09"
+   ],
+   "pair_id": "P25",
+   "split": "test"
+  },
+  {
+   "id": "PP-025",
+   "category": "paraphrase",
+   "query": "did we ever stretch the accel ramp on the drive?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-09"
+   ],
+   "pair_id": "P25",
+   "split": "test"
+  },
+  {
+   "id": "IC-026",
+   "category": "in_coverage",
+   "query": "Was any work order raised for a safety device on this conveyor?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08",
+    "WO-18"
+   ],
+   "pair_id": "P26",
+   "split": "test"
+  },
+  {
+   "id": "PP-026",
+   "category": "paraphrase",
+   "query": "any job raised on the safety gear?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08",
+    "WO-18"
+   ],
+   "pair_id": "P26",
+   "split": "test"
+  },
+  {
+   "id": "IC-027",
+   "category": "in_coverage",
+   "query": "Which record describes a seal that was losing oil?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-12"
+   ],
+   "pair_id": "P27",
+   "split": "dev"
+  },
+  {
+   "id": "PP-027",
+   "category": "paraphrase",
+   "query": "which job was the one with the leaking seal?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-12"
+   ],
+   "pair_id": "P27",
+   "split": "dev"
+  },
+  {
+   "id": "IC-028",
+   "category": "in_coverage",
+   "query": "Have we seen a rise in z_rms that was not caused by load?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-17"
+   ],
+   "pair_id": "P28",
+   "split": "dev"
+  },
+  {
+   "id": "PP-028",
+   "category": "paraphrase",
+   "query": "z_rms crept up with no load change, happened before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-17"
+   ],
+   "pair_id": "P28",
+   "split": "dev"
+  },
+  {
+   "id": "IC-029",
+   "category": "in_coverage",
+   "query": "What action was taken for a squealing idler set?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P29",
+   "split": "test"
+  },
+  {
+   "id": "PP-029",
+   "category": "paraphrase",
+   "query": "idlers were squealing, what got done?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P29",
+   "split": "test"
+  },
+  {
+   "id": "IC-030",
+   "category": "in_coverage",
+   "query": "Is there a past case where no mechanical intervention was needed?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07",
+    "WO-20"
+   ],
+   "pair_id": "P30",
+   "split": "dev"
+  },
+  {
+   "id": "PP-030",
+   "category": "paraphrase",
+   "query": "ever had a case where nothing needed fixing?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-07",
+    "WO-20"
+   ],
+   "pair_id": "P30",
+   "split": "dev"
+  },
+  {
+   "id": "IC-031",
+   "category": "in_coverage",
+   "query": "Has the belt been re-tensioned after another repair?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06",
+    "WO-14"
+   ],
+   "pair_id": "P31",
+   "split": "dev"
+  },
+  {
+   "id": "PP-031",
+   "category": "paraphrase",
+   "query": "did we retension the belt after some other repair?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06",
+    "WO-14"
+   ],
+   "pair_id": "P31",
+   "split": "dev"
+  },
+  {
+   "id": "IC-032",
+   "category": "in_coverage",
+   "query": "Which work orders were given High priority?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08",
+    "WO-18"
+   ],
+   "pair_id": "P32",
+   "split": "test"
+  },
+  {
+   "id": "PP-032",
+   "category": "paraphrase",
+   "query": "which jobs were marked high priority?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08",
+    "WO-18"
+   ],
+   "pair_id": "P32",
+   "split": "test"
+  },
+  {
+   "id": "IC-033",
+   "category": "in_coverage",
+   "query": "Have we recorded a fault found during a weekly function test?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08"
+   ],
+   "pair_id": "P33",
+   "split": "test"
+  },
+  {
+   "id": "PP-033",
+   "category": "paraphrase",
+   "query": "did the weekly function test ever turn up a fault?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08"
+   ],
+   "pair_id": "P33",
+   "split": "test"
+  },
+  {
+   "id": "IC-034",
+   "category": "in_coverage",
+   "query": "What was done about dust getting into the rollers?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P34",
+   "split": "test"
+  },
+  {
+   "id": "PP-034",
+   "category": "paraphrase",
+   "query": "dust got into the rollers, what did we do?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": "P34",
+   "split": "test"
+  },
+  {
+   "id": "IC-035",
+   "category": "in_coverage",
+   "query": "Has a loose cover ever been the cause of a noise complaint?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-19"
+   ],
+   "pair_id": "P35",
+   "split": "test"
+  },
+  {
+   "id": "PP-035",
+   "category": "paraphrase",
+   "query": "was a loose cover ever the reason for noise?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-19"
+   ],
+   "pair_id": "P35",
+   "split": "test"
+  },
+  {
+   "id": "IC-036",
+   "category": "in_coverage",
+   "query": "Which record explains a belt drift that came back after repair?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-14"
+   ],
+   "pair_id": "P36",
+   "split": "test"
+  },
+  {
+   "id": "PP-036",
+   "category": "paraphrase",
+   "query": "belt drifted again after the fix, which job was that?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-14"
+   ],
+   "pair_id": "P36",
+   "split": "test"
+  },
+  {
+   "id": "IC-037",
+   "category": "in_coverage",
+   "query": "Have we adjusted tracking bolts on this conveyor?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03"
+   ],
+   "pair_id": "P37",
+   "split": "dev"
+  },
+  {
+   "id": "PP-037",
+   "category": "paraphrase",
+   "query": "have we touched the tracking bolts before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03"
+   ],
+   "pair_id": "P37",
+   "split": "dev"
+  },
+  {
+   "id": "IC-038",
+   "category": "in_coverage",
+   "query": "Was the motor current ever monitored after a repair?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06"
+   ],
+   "pair_id": "P38",
+   "split": "dev"
+  },
+  {
+   "id": "PP-038",
+   "category": "paraphrase",
+   "query": "did we watch the motor current after a repair?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06"
+   ],
+   "pair_id": "P38",
+   "split": "dev"
+  },
+  {
+   "id": "IC-039",
+   "category": "in_coverage",
+   "query": "Has a sensor connector been secured with a cable tie?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-10"
+   ],
+   "pair_id": "P39",
+   "split": "dev"
+  },
+  {
+   "id": "PP-039",
+   "category": "paraphrase",
+   "query": "did someone cable tie the sensor connector?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-10"
+   ],
+   "pair_id": "P39",
+   "split": "dev"
+  },
+  {
+   "id": "IC-040",
+   "category": "in_coverage",
+   "query": "What was recorded about the take-up travel of the belt?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": "P40",
+   "split": "dev"
+  },
+  {
+   "id": "PP-040",
+   "category": "paraphrase",
+   "query": "is there anything written about the take-up travel?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": "P40",
+   "split": "dev"
+  },
+  {
+   "id": "PR-001",
+   "category": "partially_relevant",
+   "query": "What torque value was used on the motor mount bolts?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-002",
+   "category": "partially_relevant",
+   "query": "Which grease was applied during the January lubrication round?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-003",
+   "category": "partially_relevant",
+   "query": "How many hours of downtime did the seized idler roller cause?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-004",
+   "category": "partially_relevant",
+   "query": "Who carried out the belt re-tensioning in April?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-005",
+   "category": "partially_relevant",
+   "query": "What belt tension value was set in April, in newtons?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-006",
+   "category": "partially_relevant",
+   "query": "What was the vibration reading when the drive chain was re-tensioned?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-007",
+   "category": "partially_relevant",
+   "query": "How much had the drive chain stretched in March, in per cent?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-008",
+   "category": "partially_relevant",
+   "query": "Which brand of scraper blade was fitted in September?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-009",
+   "category": "partially_relevant",
+   "query": "What is the rated load capacity of this conveyor?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-010",
+   "category": "partially_relevant",
+   "query": "How many decibels was the noise after the inspection cover was refitted?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-011",
+   "category": "partially_relevant",
+   "query": "What part number was used for the replacement emergency stop button?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-012",
+   "category": "partially_relevant",
+   "query": "How long did the inverter ramp change take to implement?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-013",
+   "category": "partially_relevant",
+   "query": "What was the ambient temperature when the gearbox oil was topped up?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-014",
+   "category": "partially_relevant",
+   "query": "How many litres of gearbox oil were added?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-015",
+   "category": "partially_relevant",
+   "query": "What was the belt speed during the load-change event?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-016",
+   "category": "partially_relevant",
+   "query": "Which shift supervisor approved the March work order?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-017",
+   "category": "partially_relevant",
+   "query": "What was the x_rms value during the belt drift in March?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-018",
+   "category": "partially_relevant",
+   "query": "How many idler rollers are installed on this conveyor?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-019",
+   "category": "partially_relevant",
+   "query": "What is the service interval for the roller lubrication?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-020",
+   "category": "partially_relevant",
+   "query": "Which tool was used to realign the coupling?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-021",
+   "category": "partially_relevant",
+   "query": "What dial gauge reading was recorded after the coupling realignment?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-022",
+   "category": "partially_relevant",
+   "query": "How many grease nipples are there on the drive end?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-023",
+   "category": "partially_relevant",
+   "query": "What was the motor current before the belt was re-tensioned?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-024",
+   "category": "partially_relevant",
+   "query": "Which supplier provided the replacement idler roller?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-025",
+   "category": "partially_relevant",
+   "query": "What was the cost of the crowned tail pulley replacement?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-026",
+   "category": "partially_relevant",
+   "query": "How long did the conveyor stop for the scraper blade change?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-027",
+   "category": "partially_relevant",
+   "query": "What is the wear limit of the scraper blade, in millimetres?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-028",
+   "category": "partially_relevant",
+   "query": "What was the guard interlock switch model?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-029",
+   "category": "partially_relevant",
+   "query": "How many times had the inverter tripped before the ramp was changed?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-030",
+   "category": "partially_relevant",
+   "query": "What was the exact time the accelerometer cable was reseated?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-031",
+   "category": "partially_relevant",
+   "query": "Which cleaning method was used for the frame debris?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-032",
+   "category": "partially_relevant",
+   "query": "What is the acceptable z_rms baseline for this conveyor, in mm/s?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "PR-033",
+   "category": "partially_relevant",
+   "query": "How often is the dust shield inspected?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-034",
+   "category": "partially_relevant",
+   "query": "What was the oil level reading before the gearbox top-up?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "PR-035",
+   "category": "partially_relevant",
+   "query": "Which fastener size is used for the motor mount bolts?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-001",
+   "category": "near_irrelevant",
+   "query": "What was done the last time a bearing outer race failed?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-002",
+   "category": "near_irrelevant",
+   "query": "Have we had bearing spalling on the drive shaft?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-003",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a motor winding insulation failure?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-004",
+   "category": "near_irrelevant",
+   "query": "What did the gearbox oil analysis show for contamination?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-005",
+   "category": "near_irrelevant",
+   "query": "Have we repaired a belt splice failure before?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-006",
+   "category": "near_irrelevant",
+   "query": "Has the drive pulley lagging ever been replaced due to wear?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-007",
+   "category": "near_irrelevant",
+   "query": "When was the temperature sensor last calibrated?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-008",
+   "category": "near_irrelevant",
+   "query": "Has the gearbox itself ever been replaced?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-009",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a crack in the conveyor frame?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-010",
+   "category": "near_irrelevant",
+   "query": "Have we had a bearing temperature alarm on this machine?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-011",
+   "category": "near_irrelevant",
+   "query": "What was done when the motor overheated?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-012",
+   "category": "near_irrelevant",
+   "query": "Have we replaced the drive motor?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-013",
+   "category": "near_irrelevant",
+   "query": "Is there a past record of a shaft fracture?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-014",
+   "category": "near_irrelevant",
+   "query": "What did we do about rotor imbalance on the motor?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-015",
+   "category": "near_irrelevant",
+   "query": "Have we had a gear tooth failure in the gearbox?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-016",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a belt burn-through?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-017",
+   "category": "near_irrelevant",
+   "query": "What was done about corrosion on the frame?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-018",
+   "category": "near_irrelevant",
+   "query": "Have we had a lubrication pump failure?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-019",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a control cabinet fan failure?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-020",
+   "category": "near_irrelevant",
+   "query": "Have we replaced the drive belt of the motor fan?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-021",
+   "category": "near_irrelevant",
+   "query": "What was done when the encoder failed?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-022",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a contactor welding shut?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-023",
+   "category": "near_irrelevant",
+   "query": "Have we had water ingress into the motor terminal box?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-024",
+   "category": "near_irrelevant",
+   "query": "What did we do about a cracked idler shaft?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-025",
+   "category": "near_irrelevant",
+   "query": "Is there a record of a pulley bearing seizure?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-026",
+   "category": "near_irrelevant",
+   "query": "Have we had a brake failure on this conveyor?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-027",
+   "category": "near_irrelevant",
+   "query": "What was done about a loose foundation bolt of the frame?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-028",
+   "category": "near_irrelevant",
+   "query": "Is there a record of belt elongation beyond the take-up range?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "NI-029",
+   "category": "near_irrelevant",
+   "query": "Have we had a failure of the safety relay?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "NI-030",
+   "category": "near_irrelevant",
+   "query": "What did we do when the chain sprocket teeth wore out?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-001",
+   "category": "out_of_domain",
+   "query": "What is the maintenance history of the packaging machine?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-002",
+   "category": "out_of_domain",
+   "query": "Show me the work orders for the forklift.",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-003",
+   "category": "out_of_domain",
+   "query": "What did we do to the air compressor last month?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-004",
+   "category": "out_of_domain",
+   "query": "Is there a record of a pump seal replacement in the utility room?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-005",
+   "category": "out_of_domain",
+   "query": "What maintenance was done on conveyor line 2?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-006",
+   "category": "out_of_domain",
+   "query": "Have we serviced the overhead crane this year?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-007",
+   "category": "out_of_domain",
+   "query": "What is the history of the injection moulding machine?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-008",
+   "category": "out_of_domain",
+   "query": "Show me past work orders for the cooling tower.",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-009",
+   "category": "out_of_domain",
+   "query": "What did we do about the boiler feedwater pump?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-010",
+   "category": "out_of_domain",
+   "query": "Is there a record of chiller maintenance?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-011",
+   "category": "out_of_domain",
+   "query": "What faults were logged on the palletiser?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-012",
+   "category": "out_of_domain",
+   "query": "Have we repaired the shrink wrapper before?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-013",
+   "category": "out_of_domain",
+   "query": "What is the service history of the plant generator?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-014",
+   "category": "out_of_domain",
+   "query": "Show me the records for the warehouse racking inspection.",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-015",
+   "category": "out_of_domain",
+   "query": "What was done to the workshop lathe?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-016",
+   "category": "out_of_domain",
+   "query": "Is there a work order for the office air conditioning?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-017",
+   "category": "out_of_domain",
+   "query": "What maintenance is due on the fire pump?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-018",
+   "category": "out_of_domain",
+   "query": "Have we had a fault on the weighbridge?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-019",
+   "category": "out_of_domain",
+   "query": "What did we do about the dust collector fan?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-020",
+   "category": "out_of_domain",
+   "query": "Show me the calibration records of the laboratory balance.",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-021",
+   "category": "out_of_domain",
+   "query": "What is the repair history of the delivery van?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-022",
+   "category": "out_of_domain",
+   "query": "Have we serviced the hydraulic press?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "OD-023",
+   "category": "out_of_domain",
+   "query": "What faults were recorded on the labelling machine?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-024",
+   "category": "out_of_domain",
+   "query": "Is there a record of the sprinkler system test?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "OD-025",
+   "category": "out_of_domain",
+   "query": "What was done to the plant water treatment unit?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-001",
+   "category": "contradictory",
+   "query": "What is the correct fix when the belt drifts to the drive side?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-002",
+   "category": "contradictory",
+   "query": "Should I adjust the tracking bolts if the belt drifts again?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-003",
+   "category": "contradictory",
+   "query": "Do our records agree on how to correct belt mistracking?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-004",
+   "category": "contradictory",
+   "query": "Has the advice on belt drift changed over time?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "CD-005",
+   "category": "contradictory",
+   "query": "What did we try first for belt mistracking, and did it hold?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "CD-006",
+   "category": "contradictory",
+   "query": "Which repair finally stopped the belt from drifting?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-007",
+   "category": "contradictory",
+   "query": "Is replacing the tail pulley recommended for belt drift?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "CD-008",
+   "category": "contradictory",
+   "query": "Is re-tensioning enough when the belt drifts to one side?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-06",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-009",
+   "category": "contradictory",
+   "query": "How many times has belt drift been reported on this conveyor?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-010",
+   "category": "contradictory",
+   "query": "What is the most recent recommendation for belt mistracking?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "CD-011",
+   "category": "contradictory",
+   "query": "Did the March repair for belt drift work?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "CD-012",
+   "category": "contradictory",
+   "query": "Were the tracking bolts adjusted more than once?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-013",
+   "category": "contradictory",
+   "query": "Which record should I follow for a drifting belt, the older or the newer one?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-014",
+   "category": "contradictory",
+   "query": "Has a worn crowned pulley been diagnosed on this conveyor?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "CD-015",
+   "category": "contradictory",
+   "query": "Do we have conflicting maintenance advice for any symptom?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-001",
+   "category": "terminology",
+   "query": "belt wandering off to one side, any history?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-03",
+    "WO-14"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-002",
+   "category": "terminology",
+   "query": "chains gone slack, happened before?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-04"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-003",
+   "category": "terminology",
+   "query": "e-stop button ever packed up?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-08"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-004",
+   "category": "terminology",
+   "query": "VFD tripped, any record of that?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-09"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-005",
+   "category": "terminology",
+   "query": "what grease for the roller nipples?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-15"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-006",
+   "category": "terminology",
+   "query": "belt slipping, what fixed it last time?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-06"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-007",
+   "category": "terminology",
+   "query": "idler squealing, ever dealt with?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-13"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-008",
+   "category": "terminology",
+   "query": "vibe sensor lead ever come loose?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-10"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-009",
+   "category": "terminology",
+   "query": "coupling knocking, anything on record?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-11"
+   ],
+   "pair_id": null,
+   "split": "dev"
+  },
+  {
+   "id": "TM-010",
+   "category": "terminology",
+   "query": "gearbox low on oil before?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-011",
+   "category": "terminology",
+   "query": "motor feet bolts ever found loose?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-17"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-012",
+   "category": "terminology",
+   "query": "any history of a spalled bearing here?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-013",
+   "category": "terminology",
+   "query": "motor windings ever burnt out?",
+   "sufficient": false,
+   "gold_records": [],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-014",
+   "category": "terminology",
+   "query": "loose cover causing a racket, any record?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-19"
+   ],
+   "pair_id": null,
+   "split": "test"
+  },
+  {
+   "id": "TM-015",
+   "category": "terminology",
+   "query": "scraper worn out, ever changed?",
+   "sufficient": true,
+   "gold_records": [
+    "WO-16"
+   ],
+   "pair_id": null,
+   "split": "test"
+  }
+ ]
+}

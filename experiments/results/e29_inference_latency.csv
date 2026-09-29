@@ -1,0 +1,8 @@
+model,mode,median_ms,p05_ms,p95_ms
+LightGBM,"recursive, one model per channel",303.44,280.12,393.38
+XGBoost,"recursive, one model per channel",972.24,851.98,1248.64
+RandomForest,"recursive, one model per channel",2105.56,2055.51,2217.16
+ARIMA,"recursive, one model per channel",402.3,388.97,454.26
+LSTM,"direct, all channels in one pass",5.56,4.63,10.41
+TCN,"direct, all channels in one pass",4.31,3.74,6.42
+Transformer,"direct, all channels in one pass",1.69,1.56,2.86

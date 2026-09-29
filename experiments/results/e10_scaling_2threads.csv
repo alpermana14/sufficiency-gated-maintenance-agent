@@ -1,0 +1,4 @@
+lgb_config,fraction,records,retrain_s,peak_rss_delta_MB,peak_rss_total_MB
+tuned,1.0,12916,21.04,271.0,464.7
+tuned,10.0,129160,115.05,1240.1,1485.6
+tuned,50.0,645800,442.19,5940.9,6221.1

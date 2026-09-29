@@ -1,0 +1,8 @@
+,0
+cpu_model,"Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+logical_cores,12
+physical_cores,10
+cpu_max_MHz,1300
+total_RAM_GB,16.8
+thread_limit,2
+lgb_config,tuned

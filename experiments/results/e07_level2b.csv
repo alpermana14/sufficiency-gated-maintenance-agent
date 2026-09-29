@@ -1,0 +1,7 @@
+model,guard,fabricated,n
+gpt-4o,off,0,3
+gpt-4o,floor_only,0,3
+gpt-4o,floor+entail,0,3
+gpt-3.5-turbo,off,1,3
+gpt-3.5-turbo,floor_only,1,3
+gpt-3.5-turbo,floor+entail,0,3

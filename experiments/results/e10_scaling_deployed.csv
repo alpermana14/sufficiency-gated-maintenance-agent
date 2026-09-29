@@ -1,0 +1,7 @@
+lgb_config,fraction,records,retrain_s,peak_rss_delta_MB,peak_rss_total_MB
+deployed,0.25,3229,6.16,73.4,264.8
+deployed,0.5,6458,8.6,88.6,296.9
+deployed,1.0,12916,7.82,164.8,364.7
+deployed,2.0,25832,36.29,260.3,486.4
+deployed,5.0,64580,62.76,553.1,790.1
+deployed,10.0,129160,106.17,1190.4,1437.7

@@ -1,0 +1,10 @@
+query,is_gap,best_distance,floor_flags_gap,entail_flags_gap,entail_stage
+Have we dealt with high vibration caused by a load change before?,0,0.9210866093635559,0,0,pass
+What was done previously about belt tracking or tension problems?,0,0.8623541593551636,0,0,pass
+Is there any past record of routine roller lubrication?,0,1.0455681085586548,0,0,pass
+"Have we seen an anomaly that turned out to be extra load, not a fault?",0,1.0715125799179077,0,0,pass
+What was done the last time there was a bearing fault on this machine?,1,0.988588809967041,0,1,entailment
+Summarise all past maintenance records related to motor overheating.,1,1.0959845781326294,0,1,entailment
+Have we had a motor winding insulation failure before? What was done?,1,1.360971450805664,1,1,floor
+What past work orders mention gearbox oil contamination?,1,1.1537761688232422,1,1,floor
+Show me previous records of an emergency stop button failure.,1,1.3222160339355469,1,1,floor

@@ -1,0 +1,4459 @@
+{
+  "last_update": "2026-05-05 15:00:00",
+  "data_quality_warning": "All sensors are reporting normally.",
+  "minutes_ago": 5,
+  "realtime_status_msg": "YES. The data is real-time (5 mins delay).",
+  "status": "Low",
+  "alert_reasons": [
+    "ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor",
+    "distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms",
+    "z_rms forecast in 6 h = 3.04 mm/s (zone C)"
+  ],
+  "work_order_scope": "scheduled_inspection",
+  "shift_status": {
+    "temperature": {
+      "latest_score": 0.1806,
+      "threshold": 0.0467,
+      "flagged": false
+    },
+    "z_rms": {
+      "latest_score": 0.1517,
+      "threshold": 0.1544,
+      "flagged": true
+    },
+    "x_rms": {
+      "latest_score": 0.349,
+      "threshold": 0.0665,
+      "flagged": false
+    },
+    "z_peak": {
+      "latest_score": 0.2189,
+      "threshold": 0.1479,
+      "flagged": false
+    },
+    "x_peak": {
+      "latest_score": 0.3815,
+      "threshold": 0.0708,
+      "flagged": false
+    },
+    "noise": {
+      "latest_score": 0.0489,
+      "threshold": 0.1335,
+      "flagged": true
+    }
+  },
+  "iso_10816_status": "Zone C (Unsatisfactory)",
+  "current_vibration": "3.54 mm/s",
+  "session_id": "e17_case_study_1",
+  "forecast_summary": {
+    "temperature": {
+      "unit": "\u00b0C",
+      "latest_observed": 32.71,
+      "forecast": {
+        "+1 h": 32.875,
+        "+3 h": 34.703,
+        "+6 h": 36.13
+      },
+      "change_over_6h": 3.42,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 0.21,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 0.657,
+          "n": 48
+        }
+      }
+    },
+    "z_rms": {
+      "unit": "mm/s",
+      "latest_observed": 3.54,
+      "forecast": {
+        "+1 h": 3.172,
+        "+3 h": 3.033,
+        "+6 h": 3.045
+      },
+      "change_over_6h": -0.495,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 0.313,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 0.491,
+          "n": 48
+        }
+      }
+    },
+    "x_rms": {
+      "unit": "mm/s",
+      "latest_observed": 3.25,
+      "forecast": {
+        "+1 h": 3.258,
+        "+3 h": 3.368,
+        "+6 h": 3.583
+      },
+      "change_over_6h": 0.333,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 0.301,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 0.315,
+          "n": 48
+        }
+      }
+    },
+    "z_peak": {
+      "unit": "g",
+      "latest_observed": 1.3,
+      "forecast": {
+        "+1 h": 1.342,
+        "+3 h": 1.345,
+        "+6 h": 1.335
+      },
+      "change_over_6h": 0.035,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 0.026,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 0.026,
+          "n": 48
+        }
+      }
+    },
+    "x_peak": {
+      "unit": "g",
+      "latest_observed": 1.44,
+      "forecast": {
+        "+1 h": 1.509,
+        "+3 h": 1.495,
+        "+6 h": 1.504
+      },
+      "change_over_6h": 0.064,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 0.043,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 0.045,
+          "n": 48
+        }
+      }
+    },
+    "noise": {
+      "unit": "dB",
+      "latest_observed": 70.62,
+      "forecast": {
+        "+1 h": 68.298,
+        "+3 h": 67.794,
+        "+6 h": 68.322
+      },
+      "change_over_6h": -2.298,
+      "recent_error_last_24h": {
+        "30 min ahead": {
+          "mae": 1.763,
+          "n": 48
+        },
+        "6 h ahead": {
+          "mae": 1.934,
+          "n": 48
+        }
+      }
+    }
+  },
+  "current_draft_text": "",
+  "historical_summary": {
+    "last_2_days": {
+      "temperature": {
+        "min": 32.35,
+        "max": 39.51,
+        "mean": 36.154,
+        "std": 2.511,
+        "latest": 32.71
+      },
+      "z_rms": {
+        "min": 2.14,
+        "max": 4.29,
+        "mean": 2.835,
+        "std": 0.454,
+        "latest": 3.54
+      },
+      "x_rms": {
+        "min": 2.82,
+        "max": 4.66,
+        "mean": 3.541,
+        "std": 0.441,
+        "latest": 3.25
+      },
+      "z_peak": {
+        "min": 1.28,
+        "max": 1.5,
+        "mean": 1.356,
+        "std": 0.035,
+        "latest": 1.3
+      },
+      "x_peak": {
+        "min": 1.4,
+        "max": 1.71,
+        "mean": 1.512,
+        "std": 0.055,
+        "latest": 1.44
+      },
+      "noise": {
+        "min": 61.27,
+        "max": 72.02,
+        "mean": 66.473,
+        "std": 2.038,
+        "latest": 70.62
+      },
+      "anomaly_events": [
+        {
+          "timestamp": "2026-05-03 15:00:00",
+          "sensor": "z_peak",
+          "score": 0.1617,
+          "threshold": 0.1625
+        },
+        {
+          "timestamp": "2026-05-03 15:30:00",
+          "sensor": "z_peak",
+          "score": 0.1398,
+          "threshold": 0.1545
+        },
+        {
+          "timestamp": "2026-05-03 16:00:00",
+          "sensor": "z_peak",
+          "score": 0.2064,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 16:30:00",
+          "sensor": "z_peak",
+          "score": 0.1355,
+          "threshold": 0.1545
+        },
+        {
+          "timestamp": "2026-05-03 17:00:00",
+          "sensor": "z_peak",
+          "score": 0.1004,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 17:30:00",
+          "sensor": "z_peak",
+          "score": 0.1066,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 18:00:00",
+          "sensor": "z_peak",
+          "score": 0.206,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 18:30:00",
+          "sensor": "x_peak",
+          "score": 0.125,
+          "threshold": 0.134
+        },
+        {
+          "timestamp": "2026-05-03 21:00:00",
+          "sensor": "temperature",
+          "score": 0.2802,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 21:30:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 22:00:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 22:30:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 23:00:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 23:30:00",
+          "sensor": "temperature",
+          "score": 0.2721,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 00:00:00",
+          "sensor": "temperature",
+          "score": 0.2861,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 00:30:00",
+          "sensor": "noise",
+          "score": 0.1828,
+          "threshold": 0.1934
+        },
+        {
+          "timestamp": "2026-05-04 01:00:00",
+          "sensor": "noise",
+          "score": 0.1546,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-04 01:30:00",
+          "sensor": "noise",
+          "score": 0.1322,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 02:00:00",
+          "sensor": "noise",
+          "score": 0.133,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 02:30:00",
+          "sensor": "noise",
+          "score": 0.151,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-04 03:00:00",
+          "sensor": "noise",
+          "score": 0.1226,
+          "threshold": 0.1272
+        },
+        {
+          "timestamp": "2026-05-04 03:30:00",
+          "sensor": "noise",
+          "score": 0.1134,
+          "threshold": 0.1272
+        },
+        {
+          "timestamp": "2026-05-04 04:00:00",
+          "sensor": "noise",
+          "score": 0.1194,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 04:30:00",
+          "sensor": "noise",
+          "score": 0.2079,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-04 12:00:00",
+          "sensor": "x_rms",
+          "score": 0.1427,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 12:00:00",
+          "sensor": "z_rms",
+          "score": 0.1991,
+          "threshold": 0.2144
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "temperature",
+          "score": 0.2825,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "x_rms",
+          "score": 0.1034,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "z_rms",
+          "score": 0.1792,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "temperature",
+          "score": 0.246,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "z_rms",
+          "score": 0.1771,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "temperature",
+          "score": 0.1573,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "z_rms",
+          "score": 0.1349,
+          "threshold": 0.148
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "temperature",
+          "score": 0.1137,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "z_rms",
+          "score": 0.0951,
+          "threshold": 0.1106
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "temperature",
+          "score": 0.1717,
+          "threshold": 0.1746
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "x_rms",
+          "score": 0.101,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "z_rms",
+          "score": 0.0888,
+          "threshold": 0.1106
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "temperature",
+          "score": 0.1586,
+          "threshold": 0.1746
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "x_rms",
+          "score": 0.0942,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1127,
+          "threshold": 0.148
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "temperature",
+          "score": 0.1626,
+          "threshold": 0.1748
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "z_rms",
+          "score": 0.1253,
+          "threshold": 0.1402
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "temperature",
+          "score": 0.1462,
+          "threshold": 0.1748
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "z_rms",
+          "score": 0.0971,
+          "threshold": 0.1402
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "temperature",
+          "score": 0.0626,
+          "threshold": 0.1529
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "z_rms",
+          "score": 0.1146,
+          "threshold": 0.1214
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "temperature",
+          "score": 0.0813,
+          "threshold": 0.1417
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "x_rms",
+          "score": 0.0819,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "z_rms",
+          "score": 0.1013,
+          "threshold": 0.1214
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "temperature",
+          "score": 0.0542,
+          "threshold": 0.0676
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "x_rms",
+          "score": 0.0798,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.08,
+          "threshold": 0.1599
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "temperature",
+          "score": 0.0322,
+          "threshold": 0.1983
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "x_rms",
+          "score": 0.0662,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "z_rms",
+          "score": 0.0475,
+          "threshold": 0.1305
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "temperature",
+          "score": 0.0518,
+          "threshold": 0.1407
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "x_rms",
+          "score": 0.0338,
+          "threshold": 0.036
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.0472,
+          "threshold": 0.1432
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "temperature",
+          "score": 0.025,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "x_rms",
+          "score": 0.0662,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.0615,
+          "threshold": 0.1503
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "temperature",
+          "score": 0.0406,
+          "threshold": 0.2252
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.0558,
+          "threshold": 0.0584
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.069,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "temperature",
+          "score": 0.0834,
+          "threshold": 0.2036
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "x_rms",
+          "score": 0.0762,
+          "threshold": 0.1336
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "z_rms",
+          "score": 0.0465,
+          "threshold": 0.1371
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "temperature",
+          "score": 0.0908,
+          "threshold": 0.1348
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "x_rms",
+          "score": 0.0762,
+          "threshold": 0.1336
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.0999,
+          "threshold": 0.124
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "temperature",
+          "score": 0.0735,
+          "threshold": 0.2282
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "x_rms",
+          "score": 0.0968,
+          "threshold": 0.164
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "z_rms",
+          "score": 0.1155,
+          "threshold": 0.1587
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "temperature",
+          "score": 0.0838,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "x_rms",
+          "score": 0.104,
+          "threshold": 0.164
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "z_rms",
+          "score": 0.125,
+          "threshold": 0.1587
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "temperature",
+          "score": 0.109,
+          "threshold": 0.2352
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "x_rms",
+          "score": 0.1242,
+          "threshold": 0.1281
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "z_rms",
+          "score": 0.1188,
+          "threshold": 0.204
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "temperature",
+          "score": 0.1364,
+          "threshold": 0.2675
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "x_rms",
+          "score": 0.1242,
+          "threshold": 0.1281
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "z_rms",
+          "score": 0.1117,
+          "threshold": 0.1324
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "temperature",
+          "score": 0.1312,
+          "threshold": 0.2647
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "z_rms",
+          "score": 0.1062,
+          "threshold": 0.1142
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "temperature",
+          "score": 0.1292,
+          "threshold": 0.1438
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "z_rms",
+          "score": 0.1132,
+          "threshold": 0.1142
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "temperature",
+          "score": 0.1093,
+          "threshold": 0.2316
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "z_rms",
+          "score": 0.1311,
+          "threshold": 0.1998
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "temperature",
+          "score": 0.1186,
+          "threshold": 0.2015
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "x_rms",
+          "score": 0.1966,
+          "threshold": 0.201
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "z_rms",
+          "score": 0.1394,
+          "threshold": 0.1998
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "temperature",
+          "score": 0.1378,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "x_rms",
+          "score": 0.1954,
+          "threshold": 0.201
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "z_rms",
+          "score": 0.1274,
+          "threshold": 0.1876
+        },
+        {
+          "timestamp": "2026-05-05 01:30:00",
+          "sensor": "temperature",
+          "score": 0.1405,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 01:30:00",
+          "sensor": "z_rms",
+          "score": 0.1379,
+          "threshold": 0.214
+        },
+        {
+          "timestamp": "2026-05-05 02:00:00",
+          "sensor": "temperature",
+          "score": 0.1459,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 02:00:00",
+          "sensor": "z_rms",
+          "score": 0.1605,
+          "threshold": 0.214
+        },
+        {
+          "timestamp": "2026-05-05 02:30:00",
+          "sensor": "temperature",
+          "score": 0.203,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 02:30:00",
+          "sensor": "z_rms",
+          "score": 0.139,
+          "threshold": 0.1528
+        },
+        {
+          "timestamp": "2026-05-05 03:00:00",
+          "sensor": "temperature",
+          "score": 0.212,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 03:00:00",
+          "sensor": "z_rms",
+          "score": 0.1482,
+          "threshold": 0.2144
+        },
+        {
+          "timestamp": "2026-05-05 03:30:00",
+          "sensor": "temperature",
+          "score": 0.2114,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 04:00:00",
+          "sensor": "temperature",
+          "score": 0.1638,
+          "threshold": 0.2328
+        },
+        {
+          "timestamp": "2026-05-05 04:30:00",
+          "sensor": "temperature",
+          "score": 0.1575,
+          "threshold": 0.2242
+        },
+        {
+          "timestamp": "2026-05-05 05:00:00",
+          "sensor": "temperature",
+          "score": 0.1807,
+          "threshold": 0.2033
+        },
+        {
+          "timestamp": "2026-05-05 05:30:00",
+          "sensor": "temperature",
+          "score": 0.1807,
+          "threshold": 0.2033
+        },
+        {
+          "timestamp": "2026-05-05 06:00:00",
+          "sensor": "temperature",
+          "score": 0.1955,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-05 06:30:00",
+          "sensor": "temperature",
+          "score": 0.1955,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-05 07:00:00",
+          "sensor": "temperature",
+          "score": 0.137,
+          "threshold": 0.16
+        },
+        {
+          "timestamp": "2026-05-05 07:30:00",
+          "sensor": "temperature",
+          "score": 0.1682,
+          "threshold": 0.2622
+        },
+        {
+          "timestamp": "2026-05-05 08:00:00",
+          "sensor": "temperature",
+          "score": 0.1633,
+          "threshold": 0.2622
+        },
+        {
+          "timestamp": "2026-05-05 08:30:00",
+          "sensor": "temperature",
+          "score": 0.2057,
+          "threshold": 0.2549
+        },
+        {
+          "timestamp": "2026-05-05 08:30:00",
+          "sensor": "z_peak",
+          "score": 0.1225,
+          "threshold": 0.1454
+        },
+        {
+          "timestamp": "2026-05-05 09:00:00",
+          "sensor": "temperature",
+          "score": 0.2098,
+          "threshold": 0.2549
+        },
+        {
+          "timestamp": "2026-05-05 09:30:00",
+          "sensor": "temperature",
+          "score": 0.2295,
+          "threshold": 0.3048
+        },
+        {
+          "timestamp": "2026-05-05 10:00:00",
+          "sensor": "temperature",
+          "score": 0.2171,
+          "threshold": 0.3048
+        },
+        {
+          "timestamp": "2026-05-05 10:30:00",
+          "sensor": "temperature",
+          "score": 0.1755,
+          "threshold": 0.2232
+        },
+        {
+          "timestamp": "2026-05-05 11:30:00",
+          "sensor": "noise",
+          "score": 0.1996,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-05 12:00:00",
+          "sensor": "noise",
+          "score": 0.1427,
+          "threshold": 0.1496
+        },
+        {
+          "timestamp": "2026-05-05 12:30:00",
+          "sensor": "noise",
+          "score": 0.0691,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-05 13:00:00",
+          "sensor": "noise",
+          "score": 0.0568,
+          "threshold": 0.1984
+        },
+        {
+          "timestamp": "2026-05-05 13:30:00",
+          "sensor": "noise",
+          "score": 0.0852,
+          "threshold": 0.1826
+        },
+        {
+          "timestamp": "2026-05-05 14:00:00",
+          "sensor": "noise",
+          "score": 0.0526,
+          "threshold": 0.1639
+        },
+        {
+          "timestamp": "2026-05-05 14:30:00",
+          "sensor": "noise",
+          "score": 0.0476,
+          "threshold": 0.1552
+        },
+        {
+          "timestamp": "2026-05-05 15:00:00",
+          "sensor": "noise",
+          "score": 0.0489,
+          "threshold": 0.1335
+        },
+        {
+          "timestamp": "2026-05-05 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1517,
+          "threshold": 0.1544
+        }
+      ]
+    },
+    "last_7_days": {
+      "temperature": {
+        "min": 31.9,
+        "max": 39.51,
+        "mean": 36.563,
+        "std": 2.236,
+        "latest": 32.71
+      },
+      "z_rms": {
+        "min": 2.05,
+        "max": 4.29,
+        "mean": 2.726,
+        "std": 0.392,
+        "latest": 3.54
+      },
+      "x_rms": {
+        "min": 2.65,
+        "max": 4.94,
+        "mean": 3.493,
+        "std": 0.414,
+        "latest": 3.25
+      },
+      "z_peak": {
+        "min": 1.26,
+        "max": 1.5,
+        "mean": 1.354,
+        "std": 0.041,
+        "latest": 1.3
+      },
+      "x_peak": {
+        "min": 1.35,
+        "max": 1.71,
+        "mean": 1.517,
+        "std": 0.057,
+        "latest": 1.44
+      },
+      "noise": {
+        "min": 61.27,
+        "max": 72.02,
+        "mean": 66.231,
+        "std": 1.868,
+        "latest": 70.62
+      },
+      "anomaly_events": [
+        {
+          "timestamp": "2026-04-28 15:00:00",
+          "sensor": "noise",
+          "score": 0.1569,
+          "threshold": 0.1946
+        },
+        {
+          "timestamp": "2026-04-28 15:00:00",
+          "sensor": "temperature",
+          "score": 0.1874,
+          "threshold": 0.2381
+        },
+        {
+          "timestamp": "2026-04-28 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.15,
+          "threshold": 0.1524
+        },
+        {
+          "timestamp": "2026-04-28 15:30:00",
+          "sensor": "noise",
+          "score": 0.1528,
+          "threshold": 0.1946
+        },
+        {
+          "timestamp": "2026-04-28 15:30:00",
+          "sensor": "temperature",
+          "score": 0.1694,
+          "threshold": 0.2381
+        },
+        {
+          "timestamp": "2026-04-28 15:30:00",
+          "sensor": "x_rms",
+          "score": 0.2093,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 15:30:00",
+          "sensor": "z_rms",
+          "score": 0.1436,
+          "threshold": 0.1524
+        },
+        {
+          "timestamp": "2026-04-28 16:00:00",
+          "sensor": "noise",
+          "score": 0.16,
+          "threshold": 0.2626
+        },
+        {
+          "timestamp": "2026-04-28 16:00:00",
+          "sensor": "temperature",
+          "score": 0.143,
+          "threshold": 0.2256
+        },
+        {
+          "timestamp": "2026-04-28 16:00:00",
+          "sensor": "z_rms",
+          "score": 0.1622,
+          "threshold": 0.1899
+        },
+        {
+          "timestamp": "2026-04-28 16:30:00",
+          "sensor": "noise",
+          "score": 0.1738,
+          "threshold": 0.2646
+        },
+        {
+          "timestamp": "2026-04-28 16:30:00",
+          "sensor": "temperature",
+          "score": 0.1735,
+          "threshold": 0.2423
+        },
+        {
+          "timestamp": "2026-04-28 16:30:00",
+          "sensor": "x_rms",
+          "score": 0.19,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 16:30:00",
+          "sensor": "z_rms",
+          "score": 0.201,
+          "threshold": 0.2151
+        },
+        {
+          "timestamp": "2026-04-28 17:00:00",
+          "sensor": "noise",
+          "score": 0.17,
+          "threshold": 0.2363
+        },
+        {
+          "timestamp": "2026-04-28 17:00:00",
+          "sensor": "temperature",
+          "score": 0.1667,
+          "threshold": 0.2423
+        },
+        {
+          "timestamp": "2026-04-28 17:00:00",
+          "sensor": "x_rms",
+          "score": 0.19,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 17:00:00",
+          "sensor": "z_rms",
+          "score": 0.1771,
+          "threshold": 0.1949
+        },
+        {
+          "timestamp": "2026-04-28 17:30:00",
+          "sensor": "noise",
+          "score": 0.1612,
+          "threshold": 0.1841
+        },
+        {
+          "timestamp": "2026-04-28 17:30:00",
+          "sensor": "temperature",
+          "score": 0.1588,
+          "threshold": 0.2423
+        },
+        {
+          "timestamp": "2026-04-28 17:30:00",
+          "sensor": "x_rms",
+          "score": 0.19,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.1799,
+          "threshold": 0.2595
+        },
+        {
+          "timestamp": "2026-04-28 18:00:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.2384
+        },
+        {
+          "timestamp": "2026-04-28 18:00:00",
+          "sensor": "temperature",
+          "score": 0.1326,
+          "threshold": 0.2423
+        },
+        {
+          "timestamp": "2026-04-28 18:00:00",
+          "sensor": "x_rms",
+          "score": 0.19,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 18:00:00",
+          "sensor": "z_rms",
+          "score": 0.1569,
+          "threshold": 0.1838
+        },
+        {
+          "timestamp": "2026-04-28 18:30:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.2384
+        },
+        {
+          "timestamp": "2026-04-28 18:30:00",
+          "sensor": "temperature",
+          "score": 0.1565,
+          "threshold": 0.2179
+        },
+        {
+          "timestamp": "2026-04-28 18:30:00",
+          "sensor": "x_rms",
+          "score": 0.19,
+          "threshold": 0.2138
+        },
+        {
+          "timestamp": "2026-04-28 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.1569,
+          "threshold": 0.1838
+        },
+        {
+          "timestamp": "2026-04-28 19:00:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.2384
+        },
+        {
+          "timestamp": "2026-04-28 19:00:00",
+          "sensor": "temperature",
+          "score": 0.1602,
+          "threshold": 0.2179
+        },
+        {
+          "timestamp": "2026-04-28 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.1634,
+          "threshold": 0.1928
+        },
+        {
+          "timestamp": "2026-04-28 19:30:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.2384
+        },
+        {
+          "timestamp": "2026-04-28 19:30:00",
+          "sensor": "temperature",
+          "score": 0.116,
+          "threshold": 0.1507
+        },
+        {
+          "timestamp": "2026-04-28 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.2714,
+          "threshold": 0.273
+        },
+        {
+          "timestamp": "2026-04-28 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.1696,
+          "threshold": 0.2279
+        },
+        {
+          "timestamp": "2026-04-28 20:00:00",
+          "sensor": "noise",
+          "score": 0.1614,
+          "threshold": 0.1789
+        },
+        {
+          "timestamp": "2026-04-28 20:00:00",
+          "sensor": "temperature",
+          "score": 0.1444,
+          "threshold": 0.1688
+        },
+        {
+          "timestamp": "2026-04-28 20:00:00",
+          "sensor": "z_peak",
+          "score": 0.1246,
+          "threshold": 0.1258
+        },
+        {
+          "timestamp": "2026-04-28 20:00:00",
+          "sensor": "z_rms",
+          "score": 0.1793,
+          "threshold": 0.1991
+        },
+        {
+          "timestamp": "2026-04-28 20:30:00",
+          "sensor": "noise",
+          "score": 0.2398,
+          "threshold": 0.2903
+        },
+        {
+          "timestamp": "2026-04-28 20:30:00",
+          "sensor": "temperature",
+          "score": 0.2029,
+          "threshold": 0.2185
+        },
+        {
+          "timestamp": "2026-04-28 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.1883,
+          "threshold": 0.1991
+        },
+        {
+          "timestamp": "2026-04-28 21:00:00",
+          "sensor": "temperature",
+          "score": 0.2013,
+          "threshold": 0.2185
+        },
+        {
+          "timestamp": "2026-04-28 21:00:00",
+          "sensor": "z_rms",
+          "score": 0.195,
+          "threshold": 0.1991
+        },
+        {
+          "timestamp": "2026-04-28 21:30:00",
+          "sensor": "temperature",
+          "score": 0.244,
+          "threshold": 0.2477
+        },
+        {
+          "timestamp": "2026-04-28 21:30:00",
+          "sensor": "z_peak",
+          "score": 0.087,
+          "threshold": 0.0903
+        },
+        {
+          "timestamp": "2026-04-28 22:00:00",
+          "sensor": "temperature",
+          "score": 0.2742,
+          "threshold": 0.3035
+        },
+        {
+          "timestamp": "2026-04-28 22:30:00",
+          "sensor": "temperature",
+          "score": 0.2866,
+          "threshold": 0.3035
+        },
+        {
+          "timestamp": "2026-04-28 23:00:00",
+          "sensor": "temperature",
+          "score": 0.2846,
+          "threshold": 0.3035
+        },
+        {
+          "timestamp": "2026-04-29 01:00:00",
+          "sensor": "x_rms",
+          "score": 0.1082,
+          "threshold": 0.1149
+        },
+        {
+          "timestamp": "2026-04-29 01:30:00",
+          "sensor": "x_rms",
+          "score": 0.1426,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 02:00:00",
+          "sensor": "x_rms",
+          "score": 0.1413,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 02:30:00",
+          "sensor": "x_rms",
+          "score": 0.1414,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 02:30:00",
+          "sensor": "z_rms",
+          "score": 0.2292,
+          "threshold": 0.2332
+        },
+        {
+          "timestamp": "2026-04-29 03:00:00",
+          "sensor": "x_rms",
+          "score": 0.1454,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 03:30:00",
+          "sensor": "x_rms",
+          "score": 0.249,
+          "threshold": 0.2537
+        },
+        {
+          "timestamp": "2026-04-29 04:00:00",
+          "sensor": "x_rms",
+          "score": 0.2606,
+          "threshold": 0.2848
+        },
+        {
+          "timestamp": "2026-04-29 04:30:00",
+          "sensor": "x_rms",
+          "score": 0.2779,
+          "threshold": 0.2848
+        },
+        {
+          "timestamp": "2026-04-29 04:30:00",
+          "sensor": "z_rms",
+          "score": 0.2292,
+          "threshold": 0.2332
+        },
+        {
+          "timestamp": "2026-04-29 05:00:00",
+          "sensor": "x_rms",
+          "score": 0.2474,
+          "threshold": 0.2537
+        },
+        {
+          "timestamp": "2026-04-29 05:30:00",
+          "sensor": "x_rms",
+          "score": 0.2519,
+          "threshold": 0.2848
+        },
+        {
+          "timestamp": "2026-04-29 06:00:00",
+          "sensor": "x_rms",
+          "score": 0.1209,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 06:30:00",
+          "sensor": "x_rms",
+          "score": 0.1232,
+          "threshold": 0.1494
+        },
+        {
+          "timestamp": "2026-04-29 08:00:00",
+          "sensor": "x_rms",
+          "score": 0.1116,
+          "threshold": 0.1149
+        },
+        {
+          "timestamp": "2026-04-29 14:00:00",
+          "sensor": "x_peak",
+          "score": 0.1686,
+          "threshold": 0.1912
+        },
+        {
+          "timestamp": "2026-04-29 14:30:00",
+          "sensor": "temperature",
+          "score": 0.2326,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-29 14:30:00",
+          "sensor": "x_peak",
+          "score": 0.1682,
+          "threshold": 0.1912
+        },
+        {
+          "timestamp": "2026-04-29 15:00:00",
+          "sensor": "temperature",
+          "score": 0.2251,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-29 15:00:00",
+          "sensor": "x_peak",
+          "score": 0.1394,
+          "threshold": 0.1469
+        },
+        {
+          "timestamp": "2026-04-29 15:30:00",
+          "sensor": "temperature",
+          "score": 0.2226,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-29 15:30:00",
+          "sensor": "x_peak",
+          "score": 0.1164,
+          "threshold": 0.1469
+        },
+        {
+          "timestamp": "2026-04-29 16:00:00",
+          "sensor": "temperature",
+          "score": 0.213,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-29 16:00:00",
+          "sensor": "x_peak",
+          "score": 0.0546,
+          "threshold": 0.0772
+        },
+        {
+          "timestamp": "2026-04-29 16:30:00",
+          "sensor": "temperature",
+          "score": 0.2442,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 16:30:00",
+          "sensor": "x_peak",
+          "score": 0.1031,
+          "threshold": 0.1109
+        },
+        {
+          "timestamp": "2026-04-29 17:00:00",
+          "sensor": "temperature",
+          "score": 0.2308,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 17:00:00",
+          "sensor": "x_peak",
+          "score": 0.0439,
+          "threshold": 0.1057
+        },
+        {
+          "timestamp": "2026-04-29 17:30:00",
+          "sensor": "temperature",
+          "score": 0.2231,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 17:30:00",
+          "sensor": "x_peak",
+          "score": 0.087,
+          "threshold": 0.1025
+        },
+        {
+          "timestamp": "2026-04-29 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.2158,
+          "threshold": 0.2197
+        },
+        {
+          "timestamp": "2026-04-29 18:00:00",
+          "sensor": "temperature",
+          "score": 0.1828,
+          "threshold": 0.1871
+        },
+        {
+          "timestamp": "2026-04-29 18:00:00",
+          "sensor": "x_peak",
+          "score": 0.1606,
+          "threshold": 0.1608
+        },
+        {
+          "timestamp": "2026-04-29 18:30:00",
+          "sensor": "noise",
+          "score": 0.1473,
+          "threshold": 0.1533
+        },
+        {
+          "timestamp": "2026-04-29 18:30:00",
+          "sensor": "temperature",
+          "score": 0.1828,
+          "threshold": 0.1871
+        },
+        {
+          "timestamp": "2026-04-29 18:30:00",
+          "sensor": "x_peak",
+          "score": 0.1575,
+          "threshold": 0.1608
+        },
+        {
+          "timestamp": "2026-04-29 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.2168,
+          "threshold": 0.2197
+        },
+        {
+          "timestamp": "2026-04-29 19:00:00",
+          "sensor": "noise",
+          "score": 0.1331,
+          "threshold": 0.1521
+        },
+        {
+          "timestamp": "2026-04-29 19:00:00",
+          "sensor": "temperature",
+          "score": 0.221,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 19:00:00",
+          "sensor": "x_peak",
+          "score": 0.1454,
+          "threshold": 0.1465
+        },
+        {
+          "timestamp": "2026-04-29 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.2191,
+          "threshold": 0.2197
+        },
+        {
+          "timestamp": "2026-04-29 19:30:00",
+          "sensor": "noise",
+          "score": 0.1964,
+          "threshold": 0.211
+        },
+        {
+          "timestamp": "2026-04-29 19:30:00",
+          "sensor": "temperature",
+          "score": 0.2308,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 19:30:00",
+          "sensor": "x_peak",
+          "score": 0.1315,
+          "threshold": 0.1608
+        },
+        {
+          "timestamp": "2026-04-29 20:00:00",
+          "sensor": "temperature",
+          "score": 0.2355,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-29 20:00:00",
+          "sensor": "x_peak",
+          "score": 0.1202,
+          "threshold": 0.1608
+        },
+        {
+          "timestamp": "2026-04-29 20:30:00",
+          "sensor": "temperature",
+          "score": 0.2129,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-29 20:30:00",
+          "sensor": "x_peak",
+          "score": 0.1277,
+          "threshold": 0.128
+        },
+        {
+          "timestamp": "2026-04-29 20:30:00",
+          "sensor": "z_peak",
+          "score": 0.1231,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-29 21:00:00",
+          "sensor": "temperature",
+          "score": 0.2248,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-29 21:00:00",
+          "sensor": "x_peak",
+          "score": 0.1129,
+          "threshold": 0.128
+        },
+        {
+          "timestamp": "2026-04-29 21:00:00",
+          "sensor": "z_peak",
+          "score": 0.0813,
+          "threshold": 0.0871
+        },
+        {
+          "timestamp": "2026-04-29 21:30:00",
+          "sensor": "temperature",
+          "score": 0.2169,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-29 21:30:00",
+          "sensor": "x_peak",
+          "score": 0.095,
+          "threshold": 0.128
+        },
+        {
+          "timestamp": "2026-04-29 21:30:00",
+          "sensor": "z_peak",
+          "score": 0.1185,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-29 22:00:00",
+          "sensor": "z_peak",
+          "score": 0.1185,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-29 22:30:00",
+          "sensor": "z_peak",
+          "score": 0.1231,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-29 23:00:00",
+          "sensor": "z_peak",
+          "score": 0.1108,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-29 23:30:00",
+          "sensor": "z_peak",
+          "score": 0.1108,
+          "threshold": 0.1598
+        },
+        {
+          "timestamp": "2026-04-30 00:00:00",
+          "sensor": "z_peak",
+          "score": 0.1609,
+          "threshold": 0.1697
+        },
+        {
+          "timestamp": "2026-04-30 08:00:00",
+          "sensor": "x_rms",
+          "score": 0.272,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 11:30:00",
+          "sensor": "x_rms",
+          "score": 0.272,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 12:00:00",
+          "sensor": "x_rms",
+          "score": 0.2718,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 12:30:00",
+          "sensor": "x_rms",
+          "score": 0.2668,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 13:00:00",
+          "sensor": "x_rms",
+          "score": 0.2709,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 13:30:00",
+          "sensor": "temperature",
+          "score": 0.2085,
+          "threshold": 0.2131
+        },
+        {
+          "timestamp": "2026-04-30 13:30:00",
+          "sensor": "x_rms",
+          "score": 0.2658,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 14:00:00",
+          "sensor": "temperature",
+          "score": 0.2382,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 14:00:00",
+          "sensor": "x_rms",
+          "score": 0.135,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 14:30:00",
+          "sensor": "temperature",
+          "score": 0.2326,
+          "threshold": 0.2408
+        },
+        {
+          "timestamp": "2026-04-30 14:30:00",
+          "sensor": "x_rms",
+          "score": 0.135,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 15:00:00",
+          "sensor": "temperature",
+          "score": 0.2151,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-30 15:00:00",
+          "sensor": "x_rms",
+          "score": 0.1384,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1427,
+          "threshold": 0.1506
+        },
+        {
+          "timestamp": "2026-04-30 15:30:00",
+          "sensor": "temperature",
+          "score": 0.2266,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-30 15:30:00",
+          "sensor": "x_rms",
+          "score": 0.135,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 15:30:00",
+          "sensor": "z_rms",
+          "score": 0.1427,
+          "threshold": 0.1506
+        },
+        {
+          "timestamp": "2026-04-30 16:00:00",
+          "sensor": "temperature",
+          "score": 0.2109,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-30 16:00:00",
+          "sensor": "x_rms",
+          "score": 0.2271,
+          "threshold": 0.2299
+        },
+        {
+          "timestamp": "2026-04-30 16:00:00",
+          "sensor": "z_peak",
+          "score": 0.1508,
+          "threshold": 0.1544
+        },
+        {
+          "timestamp": "2026-04-30 16:00:00",
+          "sensor": "z_rms",
+          "score": 0.1878,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 16:30:00",
+          "sensor": "temperature",
+          "score": 0.2088,
+          "threshold": 0.229
+        },
+        {
+          "timestamp": "2026-04-30 16:30:00",
+          "sensor": "x_rms",
+          "score": 0.1269,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 16:30:00",
+          "sensor": "z_peak",
+          "score": 0.1495,
+          "threshold": 0.1544
+        },
+        {
+          "timestamp": "2026-04-30 16:30:00",
+          "sensor": "z_rms",
+          "score": 0.1775,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 17:00:00",
+          "sensor": "temperature",
+          "score": 0.2397,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 17:00:00",
+          "sensor": "x_rms",
+          "score": 0.1271,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 17:00:00",
+          "sensor": "z_rms",
+          "score": 0.1444,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 17:30:00",
+          "sensor": "temperature",
+          "score": 0.2211,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 17:30:00",
+          "sensor": "x_rms",
+          "score": 0.1352,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.1509,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 18:00:00",
+          "sensor": "temperature",
+          "score": 0.2211,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 18:00:00",
+          "sensor": "x_rms",
+          "score": 0.2656,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 18:00:00",
+          "sensor": "z_rms",
+          "score": 0.2084,
+          "threshold": 0.2197
+        },
+        {
+          "timestamp": "2026-04-30 18:30:00",
+          "sensor": "temperature",
+          "score": 0.2211,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 18:30:00",
+          "sensor": "x_rms",
+          "score": 0.127,
+          "threshold": 0.1472
+        },
+        {
+          "timestamp": "2026-04-30 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.203,
+          "threshold": 0.2197
+        },
+        {
+          "timestamp": "2026-04-30 19:00:00",
+          "sensor": "temperature",
+          "score": 0.2211,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 19:00:00",
+          "sensor": "x_rms",
+          "score": 0.2614,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.1444,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 19:30:00",
+          "sensor": "temperature",
+          "score": 0.2343,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.2711,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.1775,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 20:00:00",
+          "sensor": "temperature",
+          "score": 0.2088,
+          "threshold": 0.229
+        },
+        {
+          "timestamp": "2026-04-30 20:00:00",
+          "sensor": "x_rms",
+          "score": 0.2833,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-04-30 20:00:00",
+          "sensor": "z_rms",
+          "score": 0.1802,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 20:30:00",
+          "sensor": "temperature",
+          "score": 0.2215,
+          "threshold": 0.229
+        },
+        {
+          "timestamp": "2026-04-30 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.1912,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 21:00:00",
+          "sensor": "temperature",
+          "score": 0.2138,
+          "threshold": 0.2326
+        },
+        {
+          "timestamp": "2026-04-30 21:00:00",
+          "sensor": "z_rms",
+          "score": 0.1912,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 21:30:00",
+          "sensor": "temperature",
+          "score": 0.213,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-30 21:30:00",
+          "sensor": "z_rms",
+          "score": 0.1912,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 22:00:00",
+          "sensor": "temperature",
+          "score": 0.2226,
+          "threshold": 0.2344
+        },
+        {
+          "timestamp": "2026-04-30 22:00:00",
+          "sensor": "z_rms",
+          "score": 0.1878,
+          "threshold": 0.1966
+        },
+        {
+          "timestamp": "2026-04-30 22:30:00",
+          "sensor": "temperature",
+          "score": 0.2327,
+          "threshold": 0.2408
+        },
+        {
+          "timestamp": "2026-04-30 22:30:00",
+          "sensor": "z_rms",
+          "score": 0.1427,
+          "threshold": 0.1506
+        },
+        {
+          "timestamp": "2026-04-30 23:00:00",
+          "sensor": "temperature",
+          "score": 0.2044,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 23:00:00",
+          "sensor": "z_rms",
+          "score": 0.1488,
+          "threshold": 0.1506
+        },
+        {
+          "timestamp": "2026-04-30 23:30:00",
+          "sensor": "temperature",
+          "score": 0.2423,
+          "threshold": 0.248
+        },
+        {
+          "timestamp": "2026-04-30 23:30:00",
+          "sensor": "z_rms",
+          "score": 0.1362,
+          "threshold": 0.1481
+        },
+        {
+          "timestamp": "2026-05-01 00:00:00",
+          "sensor": "temperature",
+          "score": 0.1754,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 00:00:00",
+          "sensor": "z_rms",
+          "score": 0.1362,
+          "threshold": 0.1481
+        },
+        {
+          "timestamp": "2026-05-01 00:30:00",
+          "sensor": "temperature",
+          "score": 0.1742,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 00:30:00",
+          "sensor": "z_rms",
+          "score": 0.1429,
+          "threshold": 0.1481
+        },
+        {
+          "timestamp": "2026-05-01 01:00:00",
+          "sensor": "temperature",
+          "score": 0.1742,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 01:00:00",
+          "sensor": "z_rms",
+          "score": 0.194,
+          "threshold": 0.1951
+        },
+        {
+          "timestamp": "2026-05-01 01:30:00",
+          "sensor": "temperature",
+          "score": 0.1742,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 01:30:00",
+          "sensor": "z_rms",
+          "score": 0.1533,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 02:00:00",
+          "sensor": "noise",
+          "score": 0.1435,
+          "threshold": 0.1526
+        },
+        {
+          "timestamp": "2026-05-01 02:00:00",
+          "sensor": "temperature",
+          "score": 0.1778,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 02:00:00",
+          "sensor": "z_rms",
+          "score": 0.1675,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 02:30:00",
+          "sensor": "temperature",
+          "score": 0.1794,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 02:30:00",
+          "sensor": "z_rms",
+          "score": 0.1851,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 03:00:00",
+          "sensor": "temperature",
+          "score": 0.1907,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 03:00:00",
+          "sensor": "z_rms",
+          "score": 0.1934,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 03:30:00",
+          "sensor": "temperature",
+          "score": 0.1914,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 03:30:00",
+          "sensor": "z_rms",
+          "score": 0.1934,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 04:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 04:00:00",
+          "sensor": "z_rms",
+          "score": 0.1934,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 04:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 04:30:00",
+          "sensor": "z_rms",
+          "score": 0.1926,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 05:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 05:00:00",
+          "sensor": "z_rms",
+          "score": 0.1873,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 05:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 05:30:00",
+          "sensor": "z_rms",
+          "score": 0.1708,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 06:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 06:00:00",
+          "sensor": "z_rms",
+          "score": 0.1582,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 06:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 06:30:00",
+          "sensor": "z_rms",
+          "score": 0.1645,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 07:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 07:00:00",
+          "sensor": "z_rms",
+          "score": 0.1842,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 07:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 07:30:00",
+          "sensor": "z_rms",
+          "score": 0.1934,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 08:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 08:00:00",
+          "sensor": "z_rms",
+          "score": 0.2952,
+          "threshold": 0.3038
+        },
+        {
+          "timestamp": "2026-05-01 08:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 08:30:00",
+          "sensor": "z_rms",
+          "score": 0.188,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-01 09:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 09:00:00",
+          "sensor": "z_rms",
+          "score": 0.269,
+          "threshold": 0.3038
+        },
+        {
+          "timestamp": "2026-05-01 09:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 09:30:00",
+          "sensor": "z_rms",
+          "score": 0.2106,
+          "threshold": 0.2161
+        },
+        {
+          "timestamp": "2026-05-01 10:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 10:00:00",
+          "sensor": "z_rms",
+          "score": 0.1738,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-01 10:30:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 10:30:00",
+          "sensor": "z_rms",
+          "score": 0.1865,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 11:00:00",
+          "sensor": "temperature",
+          "score": 0.2014,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 11:00:00",
+          "sensor": "z_rms",
+          "score": 0.1666,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 11:30:00",
+          "sensor": "noise",
+          "score": 0.2402,
+          "threshold": 0.2586
+        },
+        {
+          "timestamp": "2026-05-01 11:30:00",
+          "sensor": "temperature",
+          "score": 0.204,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 11:30:00",
+          "sensor": "z_rms",
+          "score": 0.1666,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 12:00:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.211
+        },
+        {
+          "timestamp": "2026-05-01 12:00:00",
+          "sensor": "temperature",
+          "score": 0.206,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-01 12:00:00",
+          "sensor": "z_rms",
+          "score": 0.1799,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 12:30:00",
+          "sensor": "noise",
+          "score": 0.1309,
+          "threshold": 0.1344
+        },
+        {
+          "timestamp": "2026-05-01 12:30:00",
+          "sensor": "temperature",
+          "score": 0.256,
+          "threshold": 0.3173
+        },
+        {
+          "timestamp": "2026-05-01 12:30:00",
+          "sensor": "z_rms",
+          "score": 0.1799,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 13:00:00",
+          "sensor": "noise",
+          "score": 0.1285,
+          "threshold": 0.1533
+        },
+        {
+          "timestamp": "2026-05-01 13:00:00",
+          "sensor": "temperature",
+          "score": 0.2644,
+          "threshold": 0.3173
+        },
+        {
+          "timestamp": "2026-05-01 13:00:00",
+          "sensor": "z_rms",
+          "score": 0.1956,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-01 13:30:00",
+          "sensor": "noise",
+          "score": 0.0888,
+          "threshold": 0.1344
+        },
+        {
+          "timestamp": "2026-05-01 13:30:00",
+          "sensor": "temperature",
+          "score": 0.2699,
+          "threshold": 0.3173
+        },
+        {
+          "timestamp": "2026-05-01 13:30:00",
+          "sensor": "z_rms",
+          "score": 0.2701,
+          "threshold": 0.3038
+        },
+        {
+          "timestamp": "2026-05-01 14:00:00",
+          "sensor": "noise",
+          "score": 0.1193,
+          "threshold": 0.1386
+        },
+        {
+          "timestamp": "2026-05-01 14:00:00",
+          "sensor": "temperature",
+          "score": 0.2914,
+          "threshold": 0.3173
+        },
+        {
+          "timestamp": "2026-05-01 14:00:00",
+          "sensor": "x_rms",
+          "score": 0.2359,
+          "threshold": 0.2632
+        },
+        {
+          "timestamp": "2026-05-01 14:00:00",
+          "sensor": "z_rms",
+          "score": 0.2139,
+          "threshold": 0.227
+        },
+        {
+          "timestamp": "2026-05-01 14:30:00",
+          "sensor": "noise",
+          "score": 0.0691,
+          "threshold": 0.1386
+        },
+        {
+          "timestamp": "2026-05-01 14:30:00",
+          "sensor": "temperature",
+          "score": 0.3086,
+          "threshold": 0.3173
+        },
+        {
+          "timestamp": "2026-05-01 14:30:00",
+          "sensor": "x_rms",
+          "score": 0.181,
+          "threshold": 0.2087
+        },
+        {
+          "timestamp": "2026-05-01 14:30:00",
+          "sensor": "z_rms",
+          "score": 0.1909,
+          "threshold": 0.2186
+        },
+        {
+          "timestamp": "2026-05-01 15:00:00",
+          "sensor": "noise",
+          "score": 0.0628,
+          "threshold": 0.1235
+        },
+        {
+          "timestamp": "2026-05-01 15:00:00",
+          "sensor": "temperature",
+          "score": 0.2738,
+          "threshold": 0.2839
+        },
+        {
+          "timestamp": "2026-05-01 15:00:00",
+          "sensor": "x_rms",
+          "score": 0.128,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1952,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 15:30:00",
+          "sensor": "noise",
+          "score": 0.0338,
+          "threshold": 0.1038
+        },
+        {
+          "timestamp": "2026-05-01 15:30:00",
+          "sensor": "x_rms",
+          "score": 0.1293,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 15:30:00",
+          "sensor": "z_rms",
+          "score": 0.1742,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 16:00:00",
+          "sensor": "noise",
+          "score": 0.0738,
+          "threshold": 0.1532
+        },
+        {
+          "timestamp": "2026-05-01 16:00:00",
+          "sensor": "x_rms",
+          "score": 0.1042,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 16:00:00",
+          "sensor": "z_rms",
+          "score": 0.1383,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 16:30:00",
+          "sensor": "noise",
+          "score": 0.054,
+          "threshold": 0.1102
+        },
+        {
+          "timestamp": "2026-05-01 16:30:00",
+          "sensor": "x_rms",
+          "score": 0.0631,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 16:30:00",
+          "sensor": "z_rms",
+          "score": 0.1383,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 17:00:00",
+          "sensor": "noise",
+          "score": 0.0741,
+          "threshold": 0.1369
+        },
+        {
+          "timestamp": "2026-05-01 17:00:00",
+          "sensor": "x_rms",
+          "score": 0.0855,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 17:00:00",
+          "sensor": "z_rms",
+          "score": 0.1595,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 17:30:00",
+          "sensor": "noise",
+          "score": 0.0795,
+          "threshold": 0.1219
+        },
+        {
+          "timestamp": "2026-05-01 17:30:00",
+          "sensor": "x_rms",
+          "score": 0.0954,
+          "threshold": 0.1334
+        },
+        {
+          "timestamp": "2026-05-01 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.1646,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 18:00:00",
+          "sensor": "noise",
+          "score": 0.0422,
+          "threshold": 0.1219
+        },
+        {
+          "timestamp": "2026-05-01 18:00:00",
+          "sensor": "x_peak",
+          "score": 0.1561,
+          "threshold": 0.1615
+        },
+        {
+          "timestamp": "2026-05-01 18:00:00",
+          "sensor": "x_rms",
+          "score": 0.0545,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 18:00:00",
+          "sensor": "z_rms",
+          "score": 0.1646,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 18:30:00",
+          "sensor": "noise",
+          "score": 0.0412,
+          "threshold": 0.157
+        },
+        {
+          "timestamp": "2026-05-01 18:30:00",
+          "sensor": "x_peak",
+          "score": 0.1258,
+          "threshold": 0.1284
+        },
+        {
+          "timestamp": "2026-05-01 18:30:00",
+          "sensor": "x_rms",
+          "score": 0.0523,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.1237,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 19:00:00",
+          "sensor": "noise",
+          "score": 0.0374,
+          "threshold": 0.211
+        },
+        {
+          "timestamp": "2026-05-01 19:00:00",
+          "sensor": "x_peak",
+          "score": 0.1587,
+          "threshold": 0.1792
+        },
+        {
+          "timestamp": "2026-05-01 19:00:00",
+          "sensor": "x_rms",
+          "score": 0.0754,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.1237,
+          "threshold": 0.1995
+        },
+        {
+          "timestamp": "2026-05-01 19:30:00",
+          "sensor": "noise",
+          "score": 0.0847,
+          "threshold": 0.1664
+        },
+        {
+          "timestamp": "2026-05-01 19:30:00",
+          "sensor": "x_peak",
+          "score": 0.0818,
+          "threshold": 0.1284
+        },
+        {
+          "timestamp": "2026-05-01 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.0523,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.0891,
+          "threshold": 0.2131
+        },
+        {
+          "timestamp": "2026-05-01 20:00:00",
+          "sensor": "noise",
+          "score": 0.0978,
+          "threshold": 0.1664
+        },
+        {
+          "timestamp": "2026-05-01 20:00:00",
+          "sensor": "x_peak",
+          "score": 0.0768,
+          "threshold": 0.1284
+        },
+        {
+          "timestamp": "2026-05-01 20:00:00",
+          "sensor": "x_rms",
+          "score": 0.0347,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 20:00:00",
+          "sensor": "z_rms",
+          "score": 0.1034,
+          "threshold": 0.1681
+        },
+        {
+          "timestamp": "2026-05-01 20:30:00",
+          "sensor": "noise",
+          "score": 0.1485,
+          "threshold": 0.1599
+        },
+        {
+          "timestamp": "2026-05-01 20:30:00",
+          "sensor": "temperature",
+          "score": 0.1419,
+          "threshold": 0.1509
+        },
+        {
+          "timestamp": "2026-05-01 20:30:00",
+          "sensor": "x_peak",
+          "score": 0.1489,
+          "threshold": 0.1628
+        },
+        {
+          "timestamp": "2026-05-01 20:30:00",
+          "sensor": "x_rms",
+          "score": 0.0305,
+          "threshold": 0.0944
+        },
+        {
+          "timestamp": "2026-05-01 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.0651,
+          "threshold": 0.2186
+        },
+        {
+          "timestamp": "2026-05-01 21:00:00",
+          "sensor": "noise",
+          "score": 0.1414,
+          "threshold": 0.2704
+        },
+        {
+          "timestamp": "2026-05-01 21:00:00",
+          "sensor": "temperature",
+          "score": 0.1898,
+          "threshold": 0.2155
+        },
+        {
+          "timestamp": "2026-05-01 21:00:00",
+          "sensor": "x_peak",
+          "score": 0.1443,
+          "threshold": 0.1628
+        },
+        {
+          "timestamp": "2026-05-01 21:00:00",
+          "sensor": "x_rms",
+          "score": 0.0383,
+          "threshold": 0.1417
+        },
+        {
+          "timestamp": "2026-05-01 21:00:00",
+          "sensor": "z_rms",
+          "score": 0.0842,
+          "threshold": 0.1456
+        },
+        {
+          "timestamp": "2026-05-01 21:30:00",
+          "sensor": "noise",
+          "score": 0.1134,
+          "threshold": 0.2489
+        },
+        {
+          "timestamp": "2026-05-01 21:30:00",
+          "sensor": "temperature",
+          "score": 0.1362,
+          "threshold": 0.1509
+        },
+        {
+          "timestamp": "2026-05-01 21:30:00",
+          "sensor": "x_peak",
+          "score": 0.1115,
+          "threshold": 0.1462
+        },
+        {
+          "timestamp": "2026-05-01 21:30:00",
+          "sensor": "x_rms",
+          "score": 0.0618,
+          "threshold": 0.068
+        },
+        {
+          "timestamp": "2026-05-01 21:30:00",
+          "sensor": "z_rms",
+          "score": 0.0562,
+          "threshold": 0.227
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "noise",
+          "score": 0.1402,
+          "threshold": 0.1927
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "temperature",
+          "score": 0.1362,
+          "threshold": 0.1509
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "x_peak",
+          "score": 0.1287,
+          "threshold": 0.1615
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "x_rms",
+          "score": 0.0431,
+          "threshold": 0.1185
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "z_peak",
+          "score": 0.1053,
+          "threshold": 0.1065
+        },
+        {
+          "timestamp": "2026-05-01 22:00:00",
+          "sensor": "z_rms",
+          "score": 0.0917,
+          "threshold": 0.3038
+        },
+        {
+          "timestamp": "2026-05-01 22:30:00",
+          "sensor": "noise",
+          "score": 0.1498,
+          "threshold": 0.1649
+        },
+        {
+          "timestamp": "2026-05-01 22:30:00",
+          "sensor": "x_peak",
+          "score": 0.1243,
+          "threshold": 0.1462
+        },
+        {
+          "timestamp": "2026-05-01 22:30:00",
+          "sensor": "x_rms",
+          "score": 0.0634,
+          "threshold": 0.2087
+        },
+        {
+          "timestamp": "2026-05-01 22:30:00",
+          "sensor": "z_rms",
+          "score": 0.0885,
+          "threshold": 0.2154
+        },
+        {
+          "timestamp": "2026-05-01 23:00:00",
+          "sensor": "noise",
+          "score": 0.1382,
+          "threshold": 0.2586
+        },
+        {
+          "timestamp": "2026-05-01 23:00:00",
+          "sensor": "x_peak",
+          "score": 0.1418,
+          "threshold": 0.1615
+        },
+        {
+          "timestamp": "2026-05-01 23:00:00",
+          "sensor": "x_rms",
+          "score": 0.0537,
+          "threshold": 0.0907
+        },
+        {
+          "timestamp": "2026-05-01 23:00:00",
+          "sensor": "z_rms",
+          "score": 0.0782,
+          "threshold": 0.2743
+        },
+        {
+          "timestamp": "2026-05-01 23:30:00",
+          "sensor": "noise",
+          "score": 0.1625,
+          "threshold": 0.1645
+        },
+        {
+          "timestamp": "2026-05-01 23:30:00",
+          "sensor": "x_peak",
+          "score": 0.1414,
+          "threshold": 0.1615
+        },
+        {
+          "timestamp": "2026-05-01 23:30:00",
+          "sensor": "x_rms",
+          "score": 0.0786,
+          "threshold": 0.11
+        },
+        {
+          "timestamp": "2026-05-01 23:30:00",
+          "sensor": "z_rms",
+          "score": 0.0464,
+          "threshold": 0.267
+        },
+        {
+          "timestamp": "2026-05-02 00:00:00",
+          "sensor": "noise",
+          "score": 0.1625,
+          "threshold": 0.1645
+        },
+        {
+          "timestamp": "2026-05-02 00:00:00",
+          "sensor": "x_peak",
+          "score": 0.1676,
+          "threshold": 0.1699
+        },
+        {
+          "timestamp": "2026-05-02 00:00:00",
+          "sensor": "x_rms",
+          "score": 0.0582,
+          "threshold": 0.1552
+        },
+        {
+          "timestamp": "2026-05-02 00:00:00",
+          "sensor": "z_rms",
+          "score": 0.0922,
+          "threshold": 0.2867
+        },
+        {
+          "timestamp": "2026-05-02 00:30:00",
+          "sensor": "x_rms",
+          "score": 0.0525,
+          "threshold": 0.1036
+        },
+        {
+          "timestamp": "2026-05-02 00:30:00",
+          "sensor": "z_rms",
+          "score": 0.1028,
+          "threshold": 0.2792
+        },
+        {
+          "timestamp": "2026-05-02 01:00:00",
+          "sensor": "x_rms",
+          "score": 0.0898,
+          "threshold": 0.1358
+        },
+        {
+          "timestamp": "2026-05-02 01:00:00",
+          "sensor": "z_rms",
+          "score": 0.1365,
+          "threshold": 0.2687
+        },
+        {
+          "timestamp": "2026-05-02 01:30:00",
+          "sensor": "x_rms",
+          "score": 0.0823,
+          "threshold": 0.166
+        },
+        {
+          "timestamp": "2026-05-02 01:30:00",
+          "sensor": "z_rms",
+          "score": 0.159,
+          "threshold": 0.2468
+        },
+        {
+          "timestamp": "2026-05-02 02:00:00",
+          "sensor": "x_rms",
+          "score": 0.0823,
+          "threshold": 0.166
+        },
+        {
+          "timestamp": "2026-05-02 02:00:00",
+          "sensor": "z_rms",
+          "score": 0.1691,
+          "threshold": 0.2182
+        },
+        {
+          "timestamp": "2026-05-02 02:30:00",
+          "sensor": "x_rms",
+          "score": 0.1093,
+          "threshold": 0.1143
+        },
+        {
+          "timestamp": "2026-05-02 03:00:00",
+          "sensor": "x_rms",
+          "score": 0.1193,
+          "threshold": 0.1968
+        },
+        {
+          "timestamp": "2026-05-02 03:00:00",
+          "sensor": "z_rms",
+          "score": 0.1882,
+          "threshold": 0.1887
+        },
+        {
+          "timestamp": "2026-05-02 03:30:00",
+          "sensor": "x_rms",
+          "score": 0.1022,
+          "threshold": 0.1348
+        },
+        {
+          "timestamp": "2026-05-02 04:00:00",
+          "sensor": "x_rms",
+          "score": 0.1022,
+          "threshold": 0.1348
+        },
+        {
+          "timestamp": "2026-05-02 04:30:00",
+          "sensor": "x_rms",
+          "score": 0.1489,
+          "threshold": 0.2632
+        },
+        {
+          "timestamp": "2026-05-02 05:00:00",
+          "sensor": "x_rms",
+          "score": 0.1418,
+          "threshold": 0.2074
+        },
+        {
+          "timestamp": "2026-05-02 05:30:00",
+          "sensor": "x_rms",
+          "score": 0.1368,
+          "threshold": 0.2074
+        },
+        {
+          "timestamp": "2026-05-02 06:00:00",
+          "sensor": "x_rms",
+          "score": 0.1358,
+          "threshold": 0.1715
+        },
+        {
+          "timestamp": "2026-05-02 08:00:00",
+          "sensor": "z_rms",
+          "score": 0.2349,
+          "threshold": 0.2513
+        },
+        {
+          "timestamp": "2026-05-02 08:30:00",
+          "sensor": "noise",
+          "score": 0.1772,
+          "threshold": 0.1972
+        },
+        {
+          "timestamp": "2026-05-02 08:30:00",
+          "sensor": "z_rms",
+          "score": 0.2034,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-02 09:00:00",
+          "sensor": "noise",
+          "score": 0.1772,
+          "threshold": 0.1972
+        },
+        {
+          "timestamp": "2026-05-02 09:00:00",
+          "sensor": "z_rms",
+          "score": 0.1919,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-02 09:30:00",
+          "sensor": "noise",
+          "score": 0.1686,
+          "threshold": 0.1823
+        },
+        {
+          "timestamp": "2026-05-02 09:30:00",
+          "sensor": "z_rms",
+          "score": 0.1853,
+          "threshold": 0.2049
+        },
+        {
+          "timestamp": "2026-05-02 10:00:00",
+          "sensor": "noise",
+          "score": 0.1891,
+          "threshold": 0.1972
+        },
+        {
+          "timestamp": "2026-05-02 10:00:00",
+          "sensor": "z_rms",
+          "score": 0.1813,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-02 10:30:00",
+          "sensor": "temperature",
+          "score": 0.2086,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-02 10:30:00",
+          "sensor": "z_rms",
+          "score": 0.191,
+          "threshold": 0.2059
+        },
+        {
+          "timestamp": "2026-05-02 11:00:00",
+          "sensor": "temperature",
+          "score": 0.1956,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-02 11:00:00",
+          "sensor": "z_rms",
+          "score": 0.1954,
+          "threshold": 0.2513
+        },
+        {
+          "timestamp": "2026-05-02 11:30:00",
+          "sensor": "temperature",
+          "score": 0.1956,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-02 11:30:00",
+          "sensor": "z_rms",
+          "score": 0.2369,
+          "threshold": 0.2513
+        },
+        {
+          "timestamp": "2026-05-02 15:30:00",
+          "sensor": "x_peak",
+          "score": 0.1354,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 17:00:00",
+          "sensor": "x_peak",
+          "score": 0.1538,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 17:30:00",
+          "sensor": "x_peak",
+          "score": 0.1538,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 18:00:00",
+          "sensor": "noise",
+          "score": 0.1768,
+          "threshold": 0.1895
+        },
+        {
+          "timestamp": "2026-05-02 18:00:00",
+          "sensor": "x_peak",
+          "score": 0.1363,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 18:30:00",
+          "sensor": "noise",
+          "score": 0.1731,
+          "threshold": 0.1895
+        },
+        {
+          "timestamp": "2026-05-02 18:30:00",
+          "sensor": "x_peak",
+          "score": 0.1363,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 19:00:00",
+          "sensor": "noise",
+          "score": 0.1648,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-02 19:00:00",
+          "sensor": "x_peak",
+          "score": 0.1362,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 19:00:00",
+          "sensor": "x_rms",
+          "score": 0.283,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-05-02 19:30:00",
+          "sensor": "noise",
+          "score": 0.1677,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-02 19:30:00",
+          "sensor": "x_peak",
+          "score": 0.1312,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.2091,
+          "threshold": 0.226
+        },
+        {
+          "timestamp": "2026-05-02 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.2338,
+          "threshold": 0.2513
+        },
+        {
+          "timestamp": "2026-05-02 20:00:00",
+          "sensor": "x_peak",
+          "score": 0.1554,
+          "threshold": 0.1599
+        },
+        {
+          "timestamp": "2026-05-02 20:00:00",
+          "sensor": "x_rms",
+          "score": 0.2091,
+          "threshold": 0.226
+        },
+        {
+          "timestamp": "2026-05-02 20:30:00",
+          "sensor": "x_peak",
+          "score": 0.1147,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 20:30:00",
+          "sensor": "x_rms",
+          "score": 0.2646,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-05-02 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.1593,
+          "threshold": 0.1643
+        },
+        {
+          "timestamp": "2026-05-02 21:00:00",
+          "sensor": "x_peak",
+          "score": 0.079,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 21:00:00",
+          "sensor": "x_rms",
+          "score": 0.2818,
+          "threshold": 0.2847
+        },
+        {
+          "timestamp": "2026-05-02 21:30:00",
+          "sensor": "x_peak",
+          "score": 0.0732,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 21:30:00",
+          "sensor": "x_rms",
+          "score": 0.2308,
+          "threshold": 0.2444
+        },
+        {
+          "timestamp": "2026-05-02 22:00:00",
+          "sensor": "x_peak",
+          "score": 0.078,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 22:00:00",
+          "sensor": "x_rms",
+          "score": 0.2305,
+          "threshold": 0.2444
+        },
+        {
+          "timestamp": "2026-05-02 22:30:00",
+          "sensor": "x_peak",
+          "score": 0.0732,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 22:30:00",
+          "sensor": "x_rms",
+          "score": 0.2308,
+          "threshold": 0.2444
+        },
+        {
+          "timestamp": "2026-05-02 23:00:00",
+          "sensor": "x_peak",
+          "score": 0.0617,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-02 23:00:00",
+          "sensor": "x_rms",
+          "score": 0.2083,
+          "threshold": 0.2444
+        },
+        {
+          "timestamp": "2026-05-02 23:30:00",
+          "sensor": "x_peak",
+          "score": 0.073,
+          "threshold": 0.0795
+        },
+        {
+          "timestamp": "2026-05-02 23:30:00",
+          "sensor": "z_peak",
+          "score": 0.2102,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 00:00:00",
+          "sensor": "x_peak",
+          "score": 0.0746,
+          "threshold": 0.0795
+        },
+        {
+          "timestamp": "2026-05-03 00:00:00",
+          "sensor": "x_rms",
+          "score": 0.1533,
+          "threshold": 0.1637
+        },
+        {
+          "timestamp": "2026-05-03 00:30:00",
+          "sensor": "x_peak",
+          "score": 0.043,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-03 00:30:00",
+          "sensor": "x_rms",
+          "score": 0.149,
+          "threshold": 0.1551
+        },
+        {
+          "timestamp": "2026-05-03 01:00:00",
+          "sensor": "x_peak",
+          "score": 0.0732,
+          "threshold": 0.1571
+        },
+        {
+          "timestamp": "2026-05-03 01:00:00",
+          "sensor": "x_rms",
+          "score": 0.1542,
+          "threshold": 0.1637
+        },
+        {
+          "timestamp": "2026-05-03 01:30:00",
+          "sensor": "x_peak",
+          "score": 0.1244,
+          "threshold": 0.1387
+        },
+        {
+          "timestamp": "2026-05-03 02:00:00",
+          "sensor": "x_peak",
+          "score": 0.123,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 02:30:00",
+          "sensor": "x_peak",
+          "score": 0.12,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 03:00:00",
+          "sensor": "x_peak",
+          "score": 0.133,
+          "threshold": 0.1581
+        },
+        {
+          "timestamp": "2026-05-03 03:00:00",
+          "sensor": "z_peak",
+          "score": 0.2042,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 03:30:00",
+          "sensor": "x_peak",
+          "score": 0.138,
+          "threshold": 0.1581
+        },
+        {
+          "timestamp": "2026-05-03 03:30:00",
+          "sensor": "z_peak",
+          "score": 0.1545,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 04:00:00",
+          "sensor": "x_peak",
+          "score": 0.12,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 04:00:00",
+          "sensor": "z_peak",
+          "score": 0.1467,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 04:30:00",
+          "sensor": "x_peak",
+          "score": 0.1218,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 04:30:00",
+          "sensor": "z_peak",
+          "score": 0.159,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 05:00:00",
+          "sensor": "x_peak",
+          "score": 0.1224,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 05:00:00",
+          "sensor": "z_peak",
+          "score": 0.1467,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 05:30:00",
+          "sensor": "x_peak",
+          "score": 0.1307,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 06:00:00",
+          "sensor": "x_peak",
+          "score": 0.1195,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 06:30:00",
+          "sensor": "x_peak",
+          "score": 0.1315,
+          "threshold": 0.1385
+        },
+        {
+          "timestamp": "2026-05-03 07:00:00",
+          "sensor": "x_peak",
+          "score": 0.1399,
+          "threshold": 0.1581
+        },
+        {
+          "timestamp": "2026-05-03 07:30:00",
+          "sensor": "x_peak",
+          "score": 0.1525,
+          "threshold": 0.1581
+        },
+        {
+          "timestamp": "2026-05-03 08:00:00",
+          "sensor": "x_peak",
+          "score": 0.1466,
+          "threshold": 0.1581
+        },
+        {
+          "timestamp": "2026-05-03 09:00:00",
+          "sensor": "noise",
+          "score": 0.1617,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-03 09:30:00",
+          "sensor": "noise",
+          "score": 0.1742,
+          "threshold": 0.1888
+        },
+        {
+          "timestamp": "2026-05-03 10:00:00",
+          "sensor": "noise",
+          "score": 0.1742,
+          "threshold": 0.1888
+        },
+        {
+          "timestamp": "2026-05-03 10:30:00",
+          "sensor": "noise",
+          "score": 0.1592,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-03 10:30:00",
+          "sensor": "z_peak",
+          "score": 0.1213,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 11:00:00",
+          "sensor": "noise",
+          "score": 0.1577,
+          "threshold": 0.1826
+        },
+        {
+          "timestamp": "2026-05-03 11:00:00",
+          "sensor": "z_peak",
+          "score": 0.1004,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 11:30:00",
+          "sensor": "noise",
+          "score": 0.1814,
+          "threshold": 0.1888
+        },
+        {
+          "timestamp": "2026-05-03 11:30:00",
+          "sensor": "z_peak",
+          "score": 0.1356,
+          "threshold": 0.1625
+        },
+        {
+          "timestamp": "2026-05-03 12:00:00",
+          "sensor": "noise",
+          "score": 0.2154,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-03 12:00:00",
+          "sensor": "z_peak",
+          "score": 0.1004,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 12:30:00",
+          "sensor": "noise",
+          "score": 0.2154,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-03 12:30:00",
+          "sensor": "z_peak",
+          "score": 0.1109,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 13:00:00",
+          "sensor": "noise",
+          "score": 0.1862,
+          "threshold": 0.1888
+        },
+        {
+          "timestamp": "2026-05-03 13:00:00",
+          "sensor": "z_peak",
+          "score": 0.1004,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 13:30:00",
+          "sensor": "noise",
+          "score": 0.2269,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-03 13:30:00",
+          "sensor": "z_peak",
+          "score": 0.1058,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 14:00:00",
+          "sensor": "noise",
+          "score": 0.2269,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-03 14:00:00",
+          "sensor": "z_peak",
+          "score": 0.1058,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 14:30:00",
+          "sensor": "z_peak",
+          "score": 0.1617,
+          "threshold": 0.1625
+        },
+        {
+          "timestamp": "2026-05-03 15:00:00",
+          "sensor": "z_peak",
+          "score": 0.1617,
+          "threshold": 0.1625
+        },
+        {
+          "timestamp": "2026-05-03 15:30:00",
+          "sensor": "z_peak",
+          "score": 0.1398,
+          "threshold": 0.1545
+        },
+        {
+          "timestamp": "2026-05-03 16:00:00",
+          "sensor": "z_peak",
+          "score": 0.2064,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 16:30:00",
+          "sensor": "z_peak",
+          "score": 0.1355,
+          "threshold": 0.1545
+        },
+        {
+          "timestamp": "2026-05-03 17:00:00",
+          "sensor": "z_peak",
+          "score": 0.1004,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 17:30:00",
+          "sensor": "z_peak",
+          "score": 0.1066,
+          "threshold": 0.1289
+        },
+        {
+          "timestamp": "2026-05-03 18:00:00",
+          "sensor": "z_peak",
+          "score": 0.206,
+          "threshold": 0.2127
+        },
+        {
+          "timestamp": "2026-05-03 18:30:00",
+          "sensor": "x_peak",
+          "score": 0.125,
+          "threshold": 0.134
+        },
+        {
+          "timestamp": "2026-05-03 21:00:00",
+          "sensor": "temperature",
+          "score": 0.2802,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 21:30:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 22:00:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 22:30:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 23:00:00",
+          "sensor": "temperature",
+          "score": 0.264,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-03 23:30:00",
+          "sensor": "temperature",
+          "score": 0.2721,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 00:00:00",
+          "sensor": "temperature",
+          "score": 0.2861,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 00:30:00",
+          "sensor": "noise",
+          "score": 0.1828,
+          "threshold": 0.1934
+        },
+        {
+          "timestamp": "2026-05-04 01:00:00",
+          "sensor": "noise",
+          "score": 0.1546,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-04 01:30:00",
+          "sensor": "noise",
+          "score": 0.1322,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 02:00:00",
+          "sensor": "noise",
+          "score": 0.133,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 02:30:00",
+          "sensor": "noise",
+          "score": 0.151,
+          "threshold": 0.1859
+        },
+        {
+          "timestamp": "2026-05-04 03:00:00",
+          "sensor": "noise",
+          "score": 0.1226,
+          "threshold": 0.1272
+        },
+        {
+          "timestamp": "2026-05-04 03:30:00",
+          "sensor": "noise",
+          "score": 0.1134,
+          "threshold": 0.1272
+        },
+        {
+          "timestamp": "2026-05-04 04:00:00",
+          "sensor": "noise",
+          "score": 0.1194,
+          "threshold": 0.1397
+        },
+        {
+          "timestamp": "2026-05-04 04:30:00",
+          "sensor": "noise",
+          "score": 0.2079,
+          "threshold": 0.2088
+        },
+        {
+          "timestamp": "2026-05-04 12:00:00",
+          "sensor": "x_rms",
+          "score": 0.1427,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 12:00:00",
+          "sensor": "z_rms",
+          "score": 0.1991,
+          "threshold": 0.2144
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "temperature",
+          "score": 0.2825,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "x_rms",
+          "score": 0.1034,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 12:30:00",
+          "sensor": "z_rms",
+          "score": 0.1792,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "temperature",
+          "score": 0.246,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 13:00:00",
+          "sensor": "z_rms",
+          "score": 0.1771,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "temperature",
+          "score": 0.1573,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 13:30:00",
+          "sensor": "z_rms",
+          "score": 0.1349,
+          "threshold": 0.148
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "temperature",
+          "score": 0.1137,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "x_rms",
+          "score": 0.0617,
+          "threshold": 0.0776
+        },
+        {
+          "timestamp": "2026-05-04 14:00:00",
+          "sensor": "z_rms",
+          "score": 0.0951,
+          "threshold": 0.1106
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "temperature",
+          "score": 0.1717,
+          "threshold": 0.1746
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "x_rms",
+          "score": 0.101,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 14:30:00",
+          "sensor": "z_rms",
+          "score": 0.0888,
+          "threshold": 0.1106
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "temperature",
+          "score": 0.1586,
+          "threshold": 0.1746
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "x_rms",
+          "score": 0.0942,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1127,
+          "threshold": 0.148
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "temperature",
+          "score": 0.1626,
+          "threshold": 0.1748
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 15:30:00",
+          "sensor": "z_rms",
+          "score": 0.1253,
+          "threshold": 0.1402
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "temperature",
+          "score": 0.1462,
+          "threshold": 0.1748
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 16:00:00",
+          "sensor": "z_rms",
+          "score": 0.0971,
+          "threshold": 0.1402
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "temperature",
+          "score": 0.0626,
+          "threshold": 0.1529
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "x_rms",
+          "score": 0.0971,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 16:30:00",
+          "sensor": "z_rms",
+          "score": 0.1146,
+          "threshold": 0.1214
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "temperature",
+          "score": 0.0813,
+          "threshold": 0.1417
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "x_rms",
+          "score": 0.0819,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 17:00:00",
+          "sensor": "z_rms",
+          "score": 0.1013,
+          "threshold": 0.1214
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "temperature",
+          "score": 0.0542,
+          "threshold": 0.0676
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "x_rms",
+          "score": 0.0798,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 17:30:00",
+          "sensor": "z_rms",
+          "score": 0.08,
+          "threshold": 0.1599
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "temperature",
+          "score": 0.0322,
+          "threshold": 0.1983
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "x_rms",
+          "score": 0.0662,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 18:00:00",
+          "sensor": "z_rms",
+          "score": 0.0475,
+          "threshold": 0.1305
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "temperature",
+          "score": 0.0518,
+          "threshold": 0.1407
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "x_rms",
+          "score": 0.0338,
+          "threshold": 0.036
+        },
+        {
+          "timestamp": "2026-05-04 18:30:00",
+          "sensor": "z_rms",
+          "score": 0.0472,
+          "threshold": 0.1432
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "temperature",
+          "score": 0.025,
+          "threshold": 0.1827
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "x_rms",
+          "score": 0.0662,
+          "threshold": 0.1516
+        },
+        {
+          "timestamp": "2026-05-04 19:00:00",
+          "sensor": "z_rms",
+          "score": 0.0615,
+          "threshold": 0.1503
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "temperature",
+          "score": 0.0406,
+          "threshold": 0.2252
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "x_rms",
+          "score": 0.0558,
+          "threshold": 0.0584
+        },
+        {
+          "timestamp": "2026-05-04 19:30:00",
+          "sensor": "z_rms",
+          "score": 0.069,
+          "threshold": 0.1904
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "temperature",
+          "score": 0.0834,
+          "threshold": 0.2036
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "x_rms",
+          "score": 0.0762,
+          "threshold": 0.1336
+        },
+        {
+          "timestamp": "2026-05-04 20:00:00",
+          "sensor": "z_rms",
+          "score": 0.0465,
+          "threshold": 0.1371
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "temperature",
+          "score": 0.0908,
+          "threshold": 0.1348
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "x_rms",
+          "score": 0.0762,
+          "threshold": 0.1336
+        },
+        {
+          "timestamp": "2026-05-04 20:30:00",
+          "sensor": "z_rms",
+          "score": 0.0999,
+          "threshold": 0.124
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "temperature",
+          "score": 0.0735,
+          "threshold": 0.2282
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "x_rms",
+          "score": 0.0968,
+          "threshold": 0.164
+        },
+        {
+          "timestamp": "2026-05-04 21:00:00",
+          "sensor": "z_rms",
+          "score": 0.1155,
+          "threshold": 0.1587
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "temperature",
+          "score": 0.0838,
+          "threshold": 0.2874
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "x_rms",
+          "score": 0.104,
+          "threshold": 0.164
+        },
+        {
+          "timestamp": "2026-05-04 21:30:00",
+          "sensor": "z_rms",
+          "score": 0.125,
+          "threshold": 0.1587
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "temperature",
+          "score": 0.109,
+          "threshold": 0.2352
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "x_rms",
+          "score": 0.1242,
+          "threshold": 0.1281
+        },
+        {
+          "timestamp": "2026-05-04 22:00:00",
+          "sensor": "z_rms",
+          "score": 0.1188,
+          "threshold": 0.204
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "temperature",
+          "score": 0.1364,
+          "threshold": 0.2675
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "x_rms",
+          "score": 0.1242,
+          "threshold": 0.1281
+        },
+        {
+          "timestamp": "2026-05-04 22:30:00",
+          "sensor": "z_rms",
+          "score": 0.1117,
+          "threshold": 0.1324
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "temperature",
+          "score": 0.1312,
+          "threshold": 0.2647
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-04 23:00:00",
+          "sensor": "z_rms",
+          "score": 0.1062,
+          "threshold": 0.1142
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "temperature",
+          "score": 0.1292,
+          "threshold": 0.1438
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-04 23:30:00",
+          "sensor": "z_rms",
+          "score": 0.1132,
+          "threshold": 0.1142
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "temperature",
+          "score": 0.1093,
+          "threshold": 0.2316
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "x_rms",
+          "score": 0.1604,
+          "threshold": 0.1679
+        },
+        {
+          "timestamp": "2026-05-05 00:00:00",
+          "sensor": "z_rms",
+          "score": 0.1311,
+          "threshold": 0.1998
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "temperature",
+          "score": 0.1186,
+          "threshold": 0.2015
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "x_rms",
+          "score": 0.1966,
+          "threshold": 0.201
+        },
+        {
+          "timestamp": "2026-05-05 00:30:00",
+          "sensor": "z_rms",
+          "score": 0.1394,
+          "threshold": 0.1998
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "temperature",
+          "score": 0.1378,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "x_rms",
+          "score": 0.1954,
+          "threshold": 0.201
+        },
+        {
+          "timestamp": "2026-05-05 01:00:00",
+          "sensor": "z_rms",
+          "score": 0.1274,
+          "threshold": 0.1876
+        },
+        {
+          "timestamp": "2026-05-05 01:30:00",
+          "sensor": "temperature",
+          "score": 0.1405,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 01:30:00",
+          "sensor": "z_rms",
+          "score": 0.1379,
+          "threshold": 0.214
+        },
+        {
+          "timestamp": "2026-05-05 02:00:00",
+          "sensor": "temperature",
+          "score": 0.1459,
+          "threshold": 0.1759
+        },
+        {
+          "timestamp": "2026-05-05 02:00:00",
+          "sensor": "z_rms",
+          "score": 0.1605,
+          "threshold": 0.214
+        },
+        {
+          "timestamp": "2026-05-05 02:30:00",
+          "sensor": "temperature",
+          "score": 0.203,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 02:30:00",
+          "sensor": "z_rms",
+          "score": 0.139,
+          "threshold": 0.1528
+        },
+        {
+          "timestamp": "2026-05-05 03:00:00",
+          "sensor": "temperature",
+          "score": 0.212,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 03:00:00",
+          "sensor": "z_rms",
+          "score": 0.1482,
+          "threshold": 0.2144
+        },
+        {
+          "timestamp": "2026-05-05 03:30:00",
+          "sensor": "temperature",
+          "score": 0.2114,
+          "threshold": 0.2267
+        },
+        {
+          "timestamp": "2026-05-05 04:00:00",
+          "sensor": "temperature",
+          "score": 0.1638,
+          "threshold": 0.2328
+        },
+        {
+          "timestamp": "2026-05-05 04:30:00",
+          "sensor": "temperature",
+          "score": 0.1575,
+          "threshold": 0.2242
+        },
+        {
+          "timestamp": "2026-05-05 05:00:00",
+          "sensor": "temperature",
+          "score": 0.1807,
+          "threshold": 0.2033
+        },
+        {
+          "timestamp": "2026-05-05 05:30:00",
+          "sensor": "temperature",
+          "score": 0.1807,
+          "threshold": 0.2033
+        },
+        {
+          "timestamp": "2026-05-05 06:00:00",
+          "sensor": "temperature",
+          "score": 0.1955,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-05 06:30:00",
+          "sensor": "temperature",
+          "score": 0.1955,
+          "threshold": 0.209
+        },
+        {
+          "timestamp": "2026-05-05 07:00:00",
+          "sensor": "temperature",
+          "score": 0.137,
+          "threshold": 0.16
+        },
+        {
+          "timestamp": "2026-05-05 07:30:00",
+          "sensor": "temperature",
+          "score": 0.1682,
+          "threshold": 0.2622
+        },
+        {
+          "timestamp": "2026-05-05 08:00:00",
+          "sensor": "temperature",
+          "score": 0.1633,
+          "threshold": 0.2622
+        },
+        {
+          "timestamp": "2026-05-05 08:30:00",
+          "sensor": "temperature",
+          "score": 0.2057,
+          "threshold": 0.2549
+        },
+        {
+          "timestamp": "2026-05-05 08:30:00",
+          "sensor": "z_peak",
+          "score": 0.1225,
+          "threshold": 0.1454
+        },
+        {
+          "timestamp": "2026-05-05 09:00:00",
+          "sensor": "temperature",
+          "score": 0.2098,
+          "threshold": 0.2549
+        },
+        {
+          "timestamp": "2026-05-05 09:30:00",
+          "sensor": "temperature",
+          "score": 0.2295,
+          "threshold": 0.3048
+        },
+        {
+          "timestamp": "2026-05-05 10:00:00",
+          "sensor": "temperature",
+          "score": 0.2171,
+          "threshold": 0.3048
+        },
+        {
+          "timestamp": "2026-05-05 10:30:00",
+          "sensor": "temperature",
+          "score": 0.1755,
+          "threshold": 0.2232
+        },
+        {
+          "timestamp": "2026-05-05 11:30:00",
+          "sensor": "noise",
+          "score": 0.1996,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-05 12:00:00",
+          "sensor": "noise",
+          "score": 0.1427,
+          "threshold": 0.1496
+        },
+        {
+          "timestamp": "2026-05-05 12:30:00",
+          "sensor": "noise",
+          "score": 0.0691,
+          "threshold": 0.2327
+        },
+        {
+          "timestamp": "2026-05-05 13:00:00",
+          "sensor": "noise",
+          "score": 0.0568,
+          "threshold": 0.1984
+        },
+        {
+          "timestamp": "2026-05-05 13:30:00",
+          "sensor": "noise",
+          "score": 0.0852,
+          "threshold": 0.1826
+        },
+        {
+          "timestamp": "2026-05-05 14:00:00",
+          "sensor": "noise",
+          "score": 0.0526,
+          "threshold": 0.1639
+        },
+        {
+          "timestamp": "2026-05-05 14:30:00",
+          "sensor": "noise",
+          "score": 0.0476,
+          "threshold": 0.1552
+        },
+        {
+          "timestamp": "2026-05-05 15:00:00",
+          "sensor": "noise",
+          "score": 0.0489,
+          "threshold": 0.1335
+        },
+        {
+          "timestamp": "2026-05-05 15:00:00",
+          "sensor": "z_rms",
+          "score": 0.1517,
+          "threshold": 0.1544
+        }
+      ]
+    }
+  }
+}

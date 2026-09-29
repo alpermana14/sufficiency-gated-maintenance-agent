@@ -1,0 +1,43 @@
+session,zone,shift,forecast_worsens,alert_level,work_order_scope,expected_priority,repeat,latency_s,work_order_tool_called,tools,manual_retrieved,past_orders_queried,draft_priority,draft_alert_level,actions_heading,definite_fault_claimed,immediate_stop_recommended,causes_or_inspection_listed,action_timing,priority_match,alert_level_match,scope_followed
+e18_A_00_1,A,False,False,Normal,monitoring,Low,1,5.69,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_A_00_2,A,False,False,Normal,monitoring,Low,2,4.85,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_A_00_3,A,False,False,Normal,monitoring,Low,3,5.23,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_A_01_1,A,False,True,Low,monitoring,Low,1,5.63,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_01_2,A,False,True,Low,monitoring,Low,2,5.98,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_01_3,A,False,True,Low,monitoring,Low,3,8.04,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_10_1,A,True,False,Low,monitoring,Low,1,5.21,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_10_2,A,True,False,Low,monitoring,Low,2,5.69,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_10_3,A,True,False,Low,monitoring,Low,3,5.38,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_A_11_1,A,True,True,Medium,monitoring,Medium,1,7.14,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_A_11_2,A,True,True,Medium,monitoring,Medium,2,5.31,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_A_11_3,A,True,True,Medium,monitoring,Medium,3,6.03,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_B_00_1,B,False,False,Normal,monitoring,Low,1,8.05,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_B_00_2,B,False,False,Normal,monitoring,Low,2,8.22,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_B_00_3,B,False,False,Normal,monitoring,Low,3,7.14,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_B_01_1,B,False,True,Low,monitoring,Low,1,7.06,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_01_2,B,False,True,Low,monitoring,Low,2,6.48,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_01_3,B,False,True,Low,monitoring,Low,3,6.5,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_10_1,B,True,False,Low,monitoring,Low,1,6.87,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_10_2,B,True,False,Low,monitoring,Low,2,7.17,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_10_3,B,True,False,Low,monitoring,Low,3,6.17,True,['update_work_order'],False,False,Low,Low,none required,False,False,False,not stated,True,True,True
+e18_B_11_1,B,True,True,Medium,monitoring,Medium,1,5.55,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_B_11_2,B,True,True,Medium,monitoring,Medium,2,6.13,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_B_11_3,B,True,True,Medium,monitoring,Medium,3,6.0,True,['update_work_order'],False,False,Medium,Medium,none required,False,False,False,not stated,True,True,True
+e18_C_00_1,C,False,False,Normal,monitoring,Low,1,6.29,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_C_00_2,C,False,False,Normal,monitoring,Low,2,9.96,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_C_00_3,C,False,False,Normal,monitoring,Low,3,7.13,True,['update_work_order'],False,False,Low,Normal,none required,False,False,False,not stated,True,True,True
+e18_C_01_1,C,False,True,Low,scheduled_inspection,Low,1,12.41,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_01_2,C,False,True,Low,scheduled_inspection,Low,2,10.82,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_01_3,C,False,True,Low,scheduled_inspection,Low,3,12.1,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_10_1,C,True,False,Low,scheduled_inspection,Low,1,9.57,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_10_2,C,True,False,Low,scheduled_inspection,Low,2,10.3,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_10_3,C,True,False,Low,scheduled_inspection,Low,3,20.08,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Low,Low,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_11_1,C,True,True,Medium,scheduled_inspection,Medium,1,19.79,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Medium,Medium,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_11_2,C,True,True,Medium,scheduled_inspection,Medium,2,13.18,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Medium,Medium,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_C_11_3,C,True,True,Medium,scheduled_inspection,Medium,3,12.58,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,Medium,Medium,at the next scheduled maintenance,False,False,True,next scheduled maintenance,True,True,True
+e18_D_00_1,D,False,False,High,prompt_inspection,High,1,11.14,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True
+e18_D_00_2,D,False,False,High,prompt_inspection,High,2,11.5,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True
+e18_D_00_3,D,False,False,High,prompt_inspection,High,3,9.48,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True
+e18_D_10_1,D,True,False,High,prompt_inspection,High,1,9.93,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True
+e18_D_10_2,D,True,False,High,prompt_inspection,High,2,9.12,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True
+e18_D_10_3,D,True,False,High,prompt_inspection,High,3,17.58,True,"['retriever_tool', 'query_past_orders', 'update_work_order']",True,True,High,High,as soon as practical,False,False,True,as soon as practical,True,True,True

@@ -1,0 +1,9 @@
+sufficient,condition,grounded,abstain,misattributed,fabricated,n,grounded_pct,abstain_pct,misattributed_pct,fabricated_pct
+True,naive,58,3,0,0,61,95.1,4.9,0.0,0.0
+True,prompt_abstain,56,5,0,0,61,91.8,8.2,0.0,0.0
+True,gate,38,23,0,0,61,62.3,37.7,0.0,0.0
+True,gate_and_instruction,38,23,0,0,61,62.3,37.7,0.0,0.0
+False,naive,9,50,0,0,59,15.3,84.7,0.0,0.0
+False,prompt_abstain,4,55,0,0,59,6.8,93.2,0.0,0.0
+False,gate,2,57,0,0,59,3.4,96.6,0.0,0.0
+False,gate_and_instruction,2,57,0,0,59,3.4,96.6,0.0,0.0

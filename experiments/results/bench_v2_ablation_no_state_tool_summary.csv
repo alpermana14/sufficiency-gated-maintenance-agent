@@ -1,0 +1,8 @@
+category,runs,tool_selection_correct,latency_s
+Adversarial instructions,1,1.0,1.69
+Ambiguous requests,3,0.667,2.717
+Historical sensor data,2,1.0,1.31
+Live machine state,6,1.0,1.987
+Multi-step tool use,3,0.667,9.16
+Work-order drafting and editing,4,0.5,9.845
+Conflicting documents,1,1.0,2.28

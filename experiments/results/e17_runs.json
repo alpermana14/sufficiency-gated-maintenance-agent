@@ -1,0 +1,207 @@
+{
+  "now": "2026-05-05 15:00:00",
+  "request": "Please draft a work order for the current machine condition.",
+  "runs": [
+    {
+      "session": "e17_case_study_1",
+      "tool_calls": [
+        "retriever_tool",
+        "query_past_orders",
+        "update_work_order"
+      ],
+      "response": "I have drafted a work order for the current machine condition. Here are the details:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- No matching past work order exists. Possible causes include:\n  - Damaged or badly fitted slide rail\n  - Conveyor chain is too tight/loose\n  - Dirty conveyor\n  - Chemicals affecting plastic parts\n  - Contamination ingress\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace damaged or badly fitted slide rails.\n2. Tension the conveyor chain correctly.\n3. Clean the conveyor chain and slide rail; lubricate with silicone-based lubricant.\n4. Check for chemicals affecting plastic parts and remove the source of contamination.\n\nPriority: Low\n\nThis draft is now available for review and further action.",
+      "draft": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  No matching past work order exists. Possible causes include:\n  - Damaged or badly fitted slide rail\n  - Conveyor chain is too tight/loose\n  - Dirty conveyor\n  - Chemicals affecting plastic parts\n  - Contamination ingress\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace damaged or badly fitted slide rails.\n  2. Tension the conveyor chain correctly.\n  3. Clean the conveyor chain and slide rail; lubricate with silicone-based lubricant.\n  4. Check for chemicals affecting plastic parts and remove source of contamination.\nPriority: Low",
+      "priority": "Low",
+      "messages": [
+        {
+          "type": "human",
+          "content": "Please draft a work order for the current machine condition."
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "retriever_tool",
+              "args": {
+                "query": "vibration unsatisfactory ISO 10816 Zone C possible causes and recommended actions"
+              }
+            },
+            {
+              "name": "query_past_orders",
+              "args": {
+                "query": "vibration unsatisfactory ISO 10816 Zone C"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "and failures. MODU System conveyors should be inspected while the system is running as well as when it is shut \ndown. \nTable below shows troubleshooting guidelines.\nSymptom Cause Solution\nJerky running\nDamaged or badly fitted slide rail. Inspect and replace as necessary.\nConveyor chain is too tight/loose. Tension conveyor chain correctly.\nDirty conveyor. Clean conveyor chain and slide rail. \nLubricate with silicone based lubricant.\nNoise\nture for conveyor.\nChemicals in the environment are affecting \nplastic parts.\nCheck in MODU System catalogue \n(section TR) for listing of incompatible \nchemicals.\nDamage due to ingress of contaminate Clean the system.\nParticles, swarf etc. Remove source of contamination.\nDrive unit is \nrunning, conveyor \nchain is not\nFriction disc in slip clutch are worn or contam-\ninated. Check and replace if necessary.\nTransmission products are not fitted. Check and fit.\nIntroduction to Drive Units",
+          "tool_name": "retriever_tool"
+        },
+        {
+          "type": "tool",
+          "content": "INSUFFICIENT_EVIDENCE: no records in store. No past work order sufficiently matches this query. Tell the user that no relevant maintenance history exists for this specific issue and do NOT answer it from general knowledge or fabricate a record.",
+          "tool_name": "query_past_orders"
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "update_work_order",
+              "args": {
+                "content": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  No matching past work order exists. Possible causes include:\n  - Damaged or badly fitted slide rail\n  - Conveyor chain is too tight/loose\n  - Dirty conveyor\n  - Chemicals affecting plastic parts\n  - Contamination ingress\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace damaged or badly fitted slide rails.\n  2. Tension the conveyor chain correctly.\n  3. Clean the conveyor chain and slide rail; lubricate with silicone-based lubricant.\n  4. Check for chemicals affecting plastic parts and remove source of contamination.\nPriority: Low",
+                "session_id": "e17_case_study_1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "Draft updated. The user can see the preview.",
+          "tool_name": "update_work_order"
+        },
+        {
+          "type": "ai",
+          "content": "I have drafted a work order for the current machine condition. Here are the details:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- No matching past work order exists. Possible causes include:\n  - Damaged or badly fitted slide rail\n  - Conveyor chain is too tight/loose\n  - Dirty conveyor\n  - Chemicals affecting plastic parts\n  - Contamination ingress\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace damaged or badly fitted slide rails.\n2. Tension the conveyor chain correctly.\n3. Clean the conveyor chain and slide rail; lubricate with silicone-based lubricant.\n4. Check for chemicals affecting plastic parts and remove the source of contamination.\n\nPriority: Low\n\nThis draft is now available for review and further action."
+        }
+      ]
+    },
+    {
+      "session": "e17_case_study_2",
+      "tool_calls": [
+        "retriever_tool",
+        "query_past_orders",
+        "update_work_order"
+      ],
+      "response": "I have drafted a work order for the current machine condition. Here's a summary of the content:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- No matching past work order exists for this specific issue. Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Conveyor chain is too tight/loose.\n  - Dirty conveyor.\n  - Worn or damaged bearings in the drive unit.\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace any damaged or badly fitted slide rails.\n2. Check and adjust the conveyor chain tension.\n3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n4. Check and replace worn or damaged bearings in the drive unit.\n\nPriority: Low\n\nYou can review the draft and make any necessary adjustments.",
+      "draft": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  No matching past work order exists for this specific issue. Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Conveyor chain is too tight/loose.\n  - Dirty conveyor.\n  - Worn or damaged bearings in drive unit.\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace any damaged or badly fitted slide rails.\n  2. Check and adjust the conveyor chain tension.\n  3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n  4. Check and replace worn or damaged bearings in the drive unit.\nPriority: Low",
+      "priority": "Low",
+      "messages": [
+        {
+          "type": "human",
+          "content": "Please draft a work order for the current machine condition."
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "retriever_tool",
+              "args": {
+                "query": "vibration unsatisfactory zone C possible causes and recommended actions"
+              }
+            },
+            {
+              "name": "query_past_orders",
+              "args": {
+                "query": "vibration unsatisfactory zone C"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "and failures. MODU System conveyors should be inspected while the system is running as well as when it is shut \ndown. \nTable below shows troubleshooting guidelines.\nSymptom Cause Solution\nJerky running\nDamaged or badly fitted slide rail. Inspect and replace as necessary.\nConveyor chain is too tight/loose. Tension conveyor chain correctly.\nDirty conveyor. Clean conveyor chain and slide rail. \nLubricate with silicone based lubricant.\nNoise\nLubricate with silicone based lubricant.\nNoise\nWorn or damaged bearings in drive unit. Check/replace drive unit.\nDamaged/badly fitted slide rail. Check the free running of the chain, \nespecially in slide rail joints.\nExcessive conveyor speed. Lower speed. Check actual load \nagainst recommended loading.\nIncorrect conveyor chain tension. Tension conveyor chain correctly.\nMotor overheating \non drive unit\nOverloaded conveyor.\nRemove products from conveyor and \ntest run.",
+          "tool_name": "retriever_tool"
+        },
+        {
+          "type": "tool",
+          "content": "INSUFFICIENT_EVIDENCE: no records in store. No past work order sufficiently matches this query. Tell the user that no relevant maintenance history exists for this specific issue and do NOT answer it from general knowledge or fabricate a record.",
+          "tool_name": "query_past_orders"
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "update_work_order",
+              "args": {
+                "content": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  No matching past work order exists for this specific issue. Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Conveyor chain is too tight/loose.\n  - Dirty conveyor.\n  - Worn or damaged bearings in drive unit.\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace any damaged or badly fitted slide rails.\n  2. Check and adjust the conveyor chain tension.\n  3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n  4. Check and replace worn or damaged bearings in the drive unit.\nPriority: Low",
+                "session_id": "e17_case_study_2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "Draft updated. The user can see the preview.",
+          "tool_name": "update_work_order"
+        },
+        {
+          "type": "ai",
+          "content": "I have drafted a work order for the current machine condition. Here's a summary of the content:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- No matching past work order exists for this specific issue. Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Conveyor chain is too tight/loose.\n  - Dirty conveyor.\n  - Worn or damaged bearings in the drive unit.\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace any damaged or badly fitted slide rails.\n2. Check and adjust the conveyor chain tension.\n3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n4. Check and replace worn or damaged bearings in the drive unit.\n\nPriority: Low\n\nYou can review the draft and make any necessary adjustments."
+        }
+      ]
+    },
+    {
+      "session": "e17_case_study_3",
+      "tool_calls": [
+        "retriever_tool",
+        "query_past_orders",
+        "update_work_order"
+      ],
+      "response": "I have drafted a work order for the current machine condition. Here are the details:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Incorrect conveyor chain tension.\n  - Dirty conveyor.\n  - Worn or damaged bearings in the drive unit.\n- No matching past work order exists for this specific issue.\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace any damaged or badly fitted slide rails.\n2. Tension the conveyor chain correctly.\n3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n4. Check and replace worn or damaged bearings in the drive unit.\n\nPriority: Low\n\nThis draft is now available for review. Let me know if you need any further assistance!",
+      "draft": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Incorrect conveyor chain tension.\n  - Dirty conveyor.\n  - Worn or damaged bearings in drive unit.\n  No matching past work order exists for this specific issue.\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace any damaged or badly fitted slide rails.\n  2. Tension the conveyor chain correctly.\n  3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n  4. Check and replace worn or damaged bearings in the drive unit.\nPriority: Low",
+      "priority": "Low",
+      "messages": [
+        {
+          "type": "human",
+          "content": "Please draft a work order for the current machine condition."
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "retriever_tool",
+              "args": {
+                "query": "vibration unsatisfactory zone C possible causes and actions"
+              }
+            },
+            {
+              "name": "query_past_orders",
+              "args": {
+                "query": "vibration unsatisfactory zone C"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "and failures. MODU System conveyors should be inspected while the system is running as well as when it is shut \ndown. \nTable below shows troubleshooting guidelines.\nSymptom Cause Solution\nJerky running\nDamaged or badly fitted slide rail. Inspect and replace as necessary.\nConveyor chain is too tight/loose. Tension conveyor chain correctly.\nDirty conveyor. Clean conveyor chain and slide rail. \nLubricate with silicone based lubricant.\nNoise\nLubricate with silicone based lubricant.\nNoise\nWorn or damaged bearings in drive unit. Check/replace drive unit.\nDamaged/badly fitted slide rail. Check the free running of the chain, \nespecially in slide rail joints.\nExcessive conveyor speed. Lower speed. Check actual load \nagainst recommended loading.\nIncorrect conveyor chain tension. Tension conveyor chain correctly.\nMotor overheating \non drive unit\nOverloaded conveyor.\nRemove products from conveyor and \ntest run.",
+          "tool_name": "retriever_tool"
+        },
+        {
+          "type": "tool",
+          "content": "INSUFFICIENT_EVIDENCE: no records in store. No past work order sufficiently matches this query. Tell the user that no relevant maintenance history exists for this specific issue and do NOT answer it from general knowledge or fabricate a record.",
+          "tool_name": "query_past_orders"
+        },
+        {
+          "type": "ai",
+          "content": "",
+          "tool_calls": [
+            {
+              "name": "update_work_order",
+              "args": {
+                "content": "Incident Report:\n  Timestamp   : 2026-05-05 15:00:00\n  Vibration   : 3.54 mm/s\n  ISO Zone    : Zone C (Unsatisfactory)\n  Alert Level : Low (ISO 10816 class I zone C (Unsatisfactory) at z_rms = 3.54 mm/s; zone C is the baseline zone of this conveyor; distribution-shift episode open since 2026-05-05 08:30:00, not yet reviewed by an operator; channels flagged during the episode: noise, z_peak, z_rms; flagged in the latest window: noise, z_rms; z_rms forecast in 6 h = 3.04 mm/s (zone C))\nRoot Cause Analysis:\n  Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Incorrect conveyor chain tension.\n  - Dirty conveyor.\n  - Worn or damaged bearings in drive unit.\n  No matching past work order exists for this specific issue.\nRecommended Actions (at the next scheduled maintenance):\n  1. Inspect and replace any damaged or badly fitted slide rails.\n  2. Tension the conveyor chain correctly.\n  3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n  4. Check and replace worn or damaged bearings in the drive unit.\nPriority: Low",
+                "session_id": "e17_case_study_3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tool",
+          "content": "Draft updated. The user can see the preview.",
+          "tool_name": "update_work_order"
+        },
+        {
+          "type": "ai",
+          "content": "I have drafted a work order for the current machine condition. Here are the details:\n\nIncident Report:\n- Timestamp: 2026-05-05 15:00:00\n- Vibration: 3.54 mm/s\n- ISO Zone: Zone C (Unsatisfactory)\n- Alert Level: Low\n\nRoot Cause Analysis:\n- Possible causes include:\n  - Damaged or badly fitted slide rail.\n  - Incorrect conveyor chain tension.\n  - Dirty conveyor.\n  - Worn or damaged bearings in the drive unit.\n- No matching past work order exists for this specific issue.\n\nRecommended Actions (at the next scheduled maintenance):\n1. Inspect and replace any damaged or badly fitted slide rails.\n2. Tension the conveyor chain correctly.\n3. Clean the conveyor chain and slide rail, and lubricate with silicone-based lubricant.\n4. Check and replace worn or damaged bearings in the drive unit.\n\nPriority: Low\n\nThis draft is now available for review. Let me know if you need any further assistance!"
+        }
+      ]
+    }
+  ]
+}

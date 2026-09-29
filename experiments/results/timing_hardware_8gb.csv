@@ -1,0 +1,12 @@
+,0
+cpu,"Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+logical_cores,12
+physical_cores,10
+threads_capped_to,not capped
+ram_total_GB,16.8
+ram_available_GB,10.2
+python,3.12.10
+platform,Windows-11-10.0.26200-SP0
+budget_GB,8.0
+dl_epochs,25
+fast_model_repeats,3

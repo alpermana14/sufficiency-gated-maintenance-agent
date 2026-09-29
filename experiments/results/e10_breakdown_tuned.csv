@@ -1,0 +1,5 @@
+lgb_config,stage,seconds
+tuned,feature_engineering,0.601
+tuned,train_6_models,22.257
+tuned,forecast_inference (median),0.115
+tuned,anomaly_inference (median),0.087

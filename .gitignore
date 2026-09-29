@@ -1,0 +1,24 @@
+# credentials and local state
+.env
+*.env.local
+backend/audit_log.jsonl
+backend/maintenance_history_db/
+backend/maintenance_manual_db/
+backend/Maintenance_Conveyor.pdf
+experiments/gate_v2/emb_cache/
+experiments/gate_v2/*_cache.jsonl
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# node
+node_modules/
+frontend/dist/
+frontend/dist-local/
+
+# system
+.DS_Store
+Thumbs.db

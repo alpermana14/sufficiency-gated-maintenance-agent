@@ -1,0 +1,8 @@
+model,train_seconds,train_rows,channels
+LightGBM,19.46,12580,6
+XGBoost,40.57,12580,6
+RandomForest,393.58,12580,6
+ARIMA,31.79,12580,6
+LSTM,271.16,12580,6
+TCN,129.33,12580,6
+Transformer,159.88,12580,6

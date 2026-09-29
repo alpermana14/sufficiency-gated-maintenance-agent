@@ -1,0 +1,29 @@
+signal,detector,n_train,n_score,dim,fit_s,score_s,score_ms_per_point,peak_MB
+multivariate,Isolation Forest,336,432,6,0.6938,0.0161,0.037,0.47
+multivariate,One-Class SVM,336,432,6,0.002,0.0048,0.011,0.03
+multivariate,Local Outlier Factor,336,432,6,0.0031,0.0027,0.006,0.36
+multivariate,s-IDK2,336,432,6,0.0,0.0899,0.208,3.41
+temperature,Isolation Forest,336,432,1,0.6846,0.0159,0.037,0.5
+temperature,One-Class SVM,336,432,1,0.0018,0.0035,0.008,0.02
+temperature,Local Outlier Factor,336,432,1,0.0021,0.0015,0.004,0.36
+temperature,s-IDK2,336,432,1,0.0,0.0869,0.201,3.41
+z_rms,Isolation Forest,336,432,1,0.6833,0.0152,0.035,0.44
+z_rms,One-Class SVM,336,432,1,0.0019,0.0034,0.008,0.02
+z_rms,Local Outlier Factor,336,432,1,0.002,0.0015,0.003,0.36
+z_rms,s-IDK2,336,432,1,0.0,0.0897,0.208,3.41
+x_rms,Isolation Forest,336,432,1,0.693,0.0156,0.036,0.43
+x_rms,One-Class SVM,336,432,1,0.0019,0.0036,0.008,0.02
+x_rms,Local Outlier Factor,336,432,1,0.002,0.0015,0.003,0.36
+x_rms,s-IDK2,336,432,1,0.0,0.087,0.201,3.41
+z_peak,Isolation Forest,336,432,1,0.699,0.0152,0.035,0.3
+z_peak,One-Class SVM,336,432,1,0.002,0.0036,0.008,0.02
+z_peak,Local Outlier Factor,336,432,1,0.002,0.0014,0.003,0.36
+z_peak,s-IDK2,336,432,1,0.0,0.0868,0.201,3.41
+x_peak,Isolation Forest,336,432,1,0.6942,0.0156,0.036,0.32
+x_peak,One-Class SVM,336,432,1,0.0024,0.0036,0.008,0.02
+x_peak,Local Outlier Factor,336,432,1,0.0022,0.0014,0.003,0.36
+x_peak,s-IDK2,336,432,1,0.0,0.0899,0.208,3.41
+noise,Isolation Forest,336,432,1,0.6851,0.0158,0.037,0.47
+noise,One-Class SVM,336,432,1,0.0021,0.0038,0.009,0.02
+noise,Local Outlier Factor,336,432,1,0.0022,0.0017,0.004,0.36
+noise,s-IDK2,336,432,1,0.0,0.087,0.201,3.41
