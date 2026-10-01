@@ -71,6 +71,8 @@ Run the scripts from the `experiments/` directory. Scripts that call a language 
 | Online replay of the shift rule (Section 5.2) | `e16_shift_rule_replay.py` |
 | Table 6 | `agent_benchmark_v2/` |
 | Tables 7, 8 and 9 | `gate_v2/` (`run_gate.py`, `run_endtoend.py`) |
+| Depth of the manual search (Section 5.3.2) | `e33_manual_depth.py` |
+| Vector database check (supplementary Section S2.6) | `gate_v2/check_chroma.py` |
 | Case study and alert-rule states (Section 5.4) | `e17_case_study_replay.py`, `e18_alert_agent_grid.py` |
 | Table 10 | `agent_benchmark_v2/run_benchmark.py` with `BENCH_VARIANT=raw_readings` or `no_state` |
 | Table 11 and Section 5.5 | `e10_compute_profile.py`, `e26_history_length.py`, `e30_concurrent_load.py`, `e24_detector_timing.py` |

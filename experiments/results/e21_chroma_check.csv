@@ -1,0 +1,201 @@
+query,same_top3_in_order,same_floor_decision,max_abs_distance_diff
+Have we had belt mistracking on this conveyor before?,True,True,2.26442534723148e-08
+"belt keeps wandering to one side, has that happened before?",True,True,8.068123924509507e-08
+What was done the last time the belt slipped under load?,True,True,5.654993617820736e-08
+"belt slipped when it was loaded, what did we do last time?",True,True,1.0387862214855659e-07
+Is there a past record of jerky running at start-up?,True,True,9.809570955532365e-08
+"conveyor judders on start up, any history?",True,True,1.4643949342030282e-07
+Have we replaced an emergency stop button before?,True,True,1.834895468899589e-07
+have we ever swapped out an e-stop button?,True,True,1.4707051665396875e-07
+What caused the frequency inverter to trip on overcurrent?,True,True,3.128456094181331e-08
+why did the inverter keep tripping on overcurrent?,True,True,1.769155906217179e-07
+Has the accelerometer cable ever caused a missing vibration reading?,True,True,2.142235360214073e-07
+"vibration reading went flat once, was that the sensor cable?",True,True,1.586989184509946e-07
+What did we do about coupling misalignment at the drive end?,True,True,2.3151076700145268e-07
+"drive end coupling was out of line, what did we do?",True,True,1.1673820865532036e-07
+Have we topped up the gearbox oil before?,True,True,1.2529599291433158e-07
+have we ever had to put oil in the gearbox?,True,True,2.7895724730164773e-08
+Was an idler roller ever replaced because it seized?,True,True,2.2429484758390572e-07
+did we ever change an idler that had seized up?,True,True,7.075422980840074e-08
+Which grease is used on the roller bearings?,True,True,1.6555404869222912e-07
+what grease goes on the roller bearings?,True,True,1.0205824629849758e-07
+Has product carry-back on the return side been dealt with?,True,True,2.2796869192376334e-07
+"stuff sticking on the return belt, did we sort that out?",True,True,4.7367089694994036e-08
+Were loose motor mount bolts ever found on this machine?,True,True,1.8907062537820707e-07
+any history of loose motor mounting bolts?,True,True,1.4846319973393918e-07
+Has the guard interlock switch given a false open signal before?,True,True,1.445246726738958e-07
+"guard switch said open when it wasnt, seen that before?",True,True,1.5452078372391043e-07
+What explained the rise in acoustic noise without a vibration change?,True,True,7.974547289180123e-08
+"got noisier but vibration stayed flat, what was that?",True,True,5.558189175580708e-08
+Is there a record about a slow start after a weekend shutdown?,True,True,4.118385199536334e-08
+"slow to start after the weekend, is that written up anywhere?",True,True,3.0967793129832444e-07
+Have we had a distribution-shift episode caused by extra load?,True,True,8.813944218921677e-08
+ever had an alarm that turned out to be just extra load?,True,True,7.795212808581198e-08
+What was recommended when the vibration reached ISO zone C?,True,True,5.309429562672108e-08
+when we hit zone C what did they tell us to do?,True,True,1.318761371216226e-07
+Has debris under the return rollers caused a noise complaint?,True,True,3.765273526301627e-08
+"rubbish under the return rollers making noise, any record?",True,True,1.92837935397705e-07
+Was the drive chain ever re-tensioned?,True,True,7.47734083539342e-08
+have we ever tightened the drive chain?,True,True,1.6342543274205923e-07
+Have the idler rollers been lubricated because they ran dry?,True,True,1.6747054099042202e-07
+"idlers went dry once and got greased, right?",True,True,2.1864958577033633e-07
+What preventive maintenance has been recorded for this conveyor?,True,True,1.3688996147731558e-07
+whats the routine maintenance we have on record?,True,True,7.513583377694033e-08
+Which past work orders mention the tail pulley?,True,True,1.1736434291087505e-07
+which jobs mention the tail pulley?,True,True,2.5821496962841195e-07
+Has a scraper blade been replaced on this machine?,True,True,1.9950059870765813e-07
+did we ever put a new scraper blade on?,True,True,2.0932139288554197e-07
+What did we do when the belt edge risked fraying?,True,True,9.512402021627508e-08
+"belt edge was about to fray, what did we do?",True,True,8.895273673203974e-08
+Have we ever extended the inverter acceleration ramp?,True,True,2.1390343163396608e-07
+did we ever stretch the accel ramp on the drive?,True,True,7.69691024249397e-08
+Was any work order raised for a safety device on this conveyor?,True,True,7.988206829345756e-08
+any job raised on the safety gear?,True,True,1.497754698043252e-07
+Which record describes a seal that was losing oil?,True,True,8.922441541159287e-08
+which job was the one with the leaking seal?,True,True,1.4323098063151463e-07
+Have we seen a rise in z_rms that was not caused by load?,True,True,8.811965690469492e-08
+"z_rms crept up with no load change, happened before?",True,True,1.4405168391462553e-07
+What action was taken for a squealing idler set?,True,True,8.888954206032196e-08
+"idlers were squealing, what got done?",True,True,1.314600348578665e-07
+Is there a past case where no mechanical intervention was needed?,True,True,1.3532809095551102e-07
+ever had a case where nothing needed fixing?,True,True,1.1110679487558173e-07
+Has the belt been re-tensioned after another repair?,True,True,1.3854668146073834e-07
+did we retension the belt after some other repair?,True,True,1.8140659108212276e-07
+Which work orders were given High priority?,True,True,1.1849093994875659e-07
+which jobs were marked high priority?,True,True,2.563881857930994e-07
+Have we recorded a fault found during a weekly function test?,True,True,2.1631508562158785e-07
+did the weekly function test ever turn up a fault?,True,True,7.913020405592164e-08
+What was done about dust getting into the rollers?,True,True,9.093341657440135e-08
+"dust got into the rollers, what did we do?",True,True,2.4640891727045755e-07
+Has a loose cover ever been the cause of a noise complaint?,True,True,1.0791630344897385e-07
+was a loose cover ever the reason for noise?,True,True,1.2758344758445617e-07
+Which record explains a belt drift that came back after repair?,True,True,6.085145154433036e-08
+"belt drifted again after the fix, which job was that?",True,True,2.4647461960292105e-08
+Have we adjusted tracking bolts on this conveyor?,True,True,1.0087257429347574e-07
+have we touched the tracking bolts before?,True,True,1.4933752634505026e-07
+Was the motor current ever monitored after a repair?,True,True,9.256710975513727e-08
+did we watch the motor current after a repair?,True,True,2.0380567100630742e-07
+Has a sensor connector been secured with a cable tie?,True,True,1.7785934480762933e-07
+did someone cable tie the sensor connector?,True,True,5.902616861952481e-08
+What was recorded about the take-up travel of the belt?,True,True,1.669037772433768e-07
+is there anything written about the take-up travel?,True,True,1.0851881215856451e-07
+What torque value was used on the motor mount bolts?,True,True,8.50861940904224e-08
+Which grease was applied during the January lubrication round?,True,True,1.2903508761485938e-07
+How many hours of downtime did the seized idler roller cause?,True,True,1.3626498851504465e-07
+Who carried out the belt re-tensioning in April?,True,True,1.3756093619754495e-07
+"What belt tension value was set in April, in newtons?",True,True,1.4489817146134953e-07
+What was the vibration reading when the drive chain was re-tensioned?,True,True,7.371421240076614e-08
+"How much had the drive chain stretched in March, in per cent?",True,True,1.5756006810363488e-07
+Which brand of scraper blade was fitted in September?,True,True,9.352014385122231e-08
+What is the rated load capacity of this conveyor?,True,True,1.1247517517354311e-07
+How many decibels was the noise after the inspection cover was refitted?,True,True,7.311919725250249e-08
+What part number was used for the replacement emergency stop button?,True,True,1.241757109360364e-07
+How long did the inverter ramp change take to implement?,True,True,2.9728184491872867e-07
+What was the ambient temperature when the gearbox oil was topped up?,True,True,3.351229649339871e-08
+How many litres of gearbox oil were added?,True,True,1.8689802772087205e-07
+What was the belt speed during the load-change event?,True,True,5.860543894620207e-08
+Which shift supervisor approved the March work order?,True,True,8.837797738081576e-08
+What was the x_rms value during the belt drift in March?,True,True,2.5353355603829897e-07
+How many idler rollers are installed on this conveyor?,True,True,1.868382966119242e-07
+What is the service interval for the roller lubrication?,True,True,1.5650469675776435e-07
+Which tool was used to realign the coupling?,True,True,5.83419506039462e-08
+What dial gauge reading was recorded after the coupling realignment?,True,True,1.2444558761259827e-07
+How many grease nipples are there on the drive end?,True,True,7.165883286752717e-08
+What was the motor current before the belt was re-tensioned?,True,True,1.1955794787521512e-07
+Which supplier provided the replacement idler roller?,True,True,1.071802855356907e-07
+What was the cost of the crowned tail pulley replacement?,True,True,8.820896546524182e-08
+How long did the conveyor stop for the scraper blade change?,True,True,1.266503901753424e-07
+"What is the wear limit of the scraper blade, in millimetres?",True,True,1.4892755872963903e-07
+What was the guard interlock switch model?,True,True,1.0208107470432992e-07
+How many times had the inverter tripped before the ramp was changed?,True,True,9.111084775526024e-09
+What was the exact time the accelerometer cable was reseated?,True,True,1.2146926908762623e-07
+Which cleaning method was used for the frame debris?,True,True,1.5997669633449618e-07
+"What is the acceptable z_rms baseline for this conveyor, in mm/s?",True,True,3.2057781873540137e-07
+How often is the dust shield inspected?,True,True,1.3547547905723434e-07
+What was the oil level reading before the gearbox top-up?,True,True,1.0385655535571914e-07
+Which fastener size is used for the motor mount bolts?,True,True,1.493134347274605e-07
+What was done the last time a bearing outer race failed?,True,True,1.4065705800092587e-07
+Have we had bearing spalling on the drive shaft?,True,True,1.5287055421531193e-07
+Is there a record of a motor winding insulation failure?,True,True,1.4934549708023326e-07
+What did the gearbox oil analysis show for contamination?,True,True,4.7614859610689564e-08
+Have we repaired a belt splice failure before?,True,True,7.822129655110643e-08
+Has the drive pulley lagging ever been replaced due to wear?,True,True,1.5213515869305638e-07
+When was the temperature sensor last calibrated?,True,True,1.2778550262382282e-07
+Has the gearbox itself ever been replaced?,True,True,1.3859528502635499e-07
+Is there a record of a crack in the conveyor frame?,True,True,5.022021598577453e-08
+Have we had a bearing temperature alarm on this machine?,True,True,1.5430495792223553e-07
+What was done when the motor overheated?,True,True,2.312250879654698e-07
+Have we replaced the drive motor?,True,True,1.5896313998453593e-07
+Is there a past record of a shaft fracture?,True,True,1.8104330101742505e-07
+What did we do about rotor imbalance on the motor?,True,True,1.135061764578893e-07
+Have we had a gear tooth failure in the gearbox?,True,True,3.4253349934232347e-08
+Is there a record of a belt burn-through?,True,True,8.135711904166953e-08
+What was done about corrosion on the frame?,True,True,5.597770935672486e-08
+Have we had a lubrication pump failure?,True,True,8.629250658476195e-08
+Is there a record of a control cabinet fan failure?,True,True,1.9260707317947379e-07
+Have we replaced the drive belt of the motor fan?,True,True,1.0419796514504753e-07
+What was done when the encoder failed?,True,True,1.4601766107347203e-07
+Is there a record of a contactor welding shut?,True,True,3.678260274142531e-08
+Have we had water ingress into the motor terminal box?,True,True,9.425094193993289e-08
+What did we do about a cracked idler shaft?,True,True,3.059892306200851e-08
+Is there a record of a pulley bearing seizure?,True,True,1.671576865813762e-07
+Have we had a brake failure on this conveyor?,True,True,1.5428681732210237e-07
+What was done about a loose foundation bolt of the frame?,True,True,8.208998480974117e-08
+Is there a record of belt elongation beyond the take-up range?,True,True,1.827679365629109e-07
+Have we had a failure of the safety relay?,True,True,1.6147417225553795e-07
+What did we do when the chain sprocket teeth wore out?,True,True,7.957938596980796e-08
+What is the maintenance history of the packaging machine?,True,True,1.6897520294101298e-07
+Show me the work orders for the forklift.,True,True,1.841548875614052e-07
+What did we do to the air compressor last month?,True,True,1.0176809772666218e-07
+Is there a record of a pump seal replacement in the utility room?,True,True,2.2006680966413228e-07
+What maintenance was done on conveyor line 2?,True,True,1.5089725968753243e-07
+Have we serviced the overhead crane this year?,True,True,2.556018288135675e-07
+What is the history of the injection moulding machine?,True,True,1.9982082810621193e-07
+Show me past work orders for the cooling tower.,True,True,1.5715863987963985e-07
+What did we do about the boiler feedwater pump?,True,True,2.663328528829112e-07
+Is there a record of chiller maintenance?,True,True,8.576262278126023e-08
+What faults were logged on the palletiser?,True,True,1.262329754059266e-07
+Have we repaired the shrink wrapper before?,True,True,1.5285688492738814e-07
+What is the service history of the plant generator?,True,True,2.020708251837533e-07
+Show me the records for the warehouse racking inspection.,True,True,6.879368719125978e-08
+What was done to the workshop lathe?,True,True,1.4702555772849735e-07
+Is there a work order for the office air conditioning?,True,True,1.588106666172706e-07
+What maintenance is due on the fire pump?,True,True,1.553814847898849e-07
+Have we had a fault on the weighbridge?,True,True,8.585932231852667e-08
+What did we do about the dust collector fan?,True,True,1.387672128316808e-07
+Show me the calibration records of the laboratory balance.,True,True,1.5780098827633537e-07
+What is the repair history of the delivery van?,True,True,3.7583628542670056e-07
+Have we serviced the hydraulic press?,True,True,1.6197944852081037e-07
+What faults were recorded on the labelling machine?,True,True,6.661842455457645e-08
+Is there a record of the sprinkler system test?,True,True,2.547300301802835e-07
+What was done to the plant water treatment unit?,True,True,4.749522930502792e-08
+What is the correct fix when the belt drifts to the drive side?,True,True,9.514233245688786e-08
+Should I adjust the tracking bolts if the belt drifts again?,True,True,6.427018695021047e-08
+Do our records agree on how to correct belt mistracking?,True,True,5.2795591232168704e-08
+Has the advice on belt drift changed over time?,True,True,1.0327894450767872e-07
+"What did we try first for belt mistracking, and did it hold?",True,True,2.7368513455527932e-08
+Which repair finally stopped the belt from drifting?,True,True,1.2657799863813324e-07
+Is replacing the tail pulley recommended for belt drift?,True,True,9.89052610922414e-08
+Is re-tensioning enough when the belt drifts to one side?,True,True,6.307442301789479e-08
+How many times has belt drift been reported on this conveyor?,True,True,9.501226294617027e-08
+What is the most recent recommendation for belt mistracking?,True,True,1.8808424773197885e-07
+Did the March repair for belt drift work?,True,True,1.291842111061925e-07
+Were the tracking bolts adjusted more than once?,True,True,1.1343069150626661e-08
+"Which record should I follow for a drifting belt, the older or the newer one?",True,True,1.3771758511360588e-07
+Has a worn crowned pulley been diagnosed on this conveyor?,True,True,1.2365965285088265e-07
+Do we have conflicting maintenance advice for any symptom?,True,True,9.963420088965336e-08
+"belt wandering off to one side, any history?",True,True,2.3494283762914847e-07
+"chains gone slack, happened before?",True,True,1.8872307716577552e-07
+e-stop button ever packed up?,True,True,7.047445493846283e-08
+"VFD tripped, any record of that?",True,True,9.873124828807534e-08
+what grease for the roller nipples?,True,True,9.125238031870708e-08
+"belt slipping, what fixed it last time?",True,True,1.3093710704570327e-07
+"idler squealing, ever dealt with?",True,True,1.1187611970164824e-07
+vibe sensor lead ever come loose?,True,True,1.3044165925180096e-07
+"coupling knocking, anything on record?",True,True,1.2967117490880753e-07
+gearbox low on oil before?,True,True,4.778940931871034e-08
+motor feet bolts ever found loose?,True,True,1.5664133545811865e-07
+any history of a spalled bearing here?,True,True,3.613149779368996e-08
+motor windings ever burnt out?,True,True,1.0875195211035305e-07
+"loose cover causing a racket, any record?",True,True,9.295248970531134e-08
+"scraper worn out, ever changed?",True,True,9.03757864101351e-08
